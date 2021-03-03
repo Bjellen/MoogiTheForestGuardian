@@ -18,17 +18,21 @@ public class PlayerController : MonoBehaviour
 
     [Header("Input Checks")]
     public float x;
-    //public float y;
+    public float y;
+
+    [Header("LadderMovement")]
+    public bool isClimbing;
 
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        isClimbing = false;
     }
 
     private void Update()
     {
         x = Input.GetAxisRaw("Horizontal");
-        //y = Input.GetAxisRaw("Vertical");
+        y = Input.GetAxisRaw("Vertical");
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         { Jump(); }
@@ -37,7 +41,11 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Movement();
+        if (isClimbing == false)
+        { Movement(); }
+
+        if (isClimbing == true)
+        { Climb(); }
 
         if(facingRight == false && x < 0) { Flip(); }
         else if(facingRight == true && x > 0 ) { Flip(); }
@@ -71,4 +79,32 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(0, 180, 0);
     }
 
+    void Climb()
+    {
+        rb2D.velocity = new Vector2(0, y * moveSpeed);
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "LadderBottom" && y > 0)
+        {
+            isClimbing = true;
+        }
+        else if (collision.gameObject.tag == "LadderBottom" && y < 0)
+        {
+            isClimbing = false;
+        }
+
+        if (collision.gameObject.tag == "LadderTop" && y < 0)
+        {
+            isClimbing = true;
+        }
+        else if (collision.gameObject.tag == "LadderTop" && y > 0)
+        {
+            isClimbing = false;
+        }
+
+    }
+
 }
+
