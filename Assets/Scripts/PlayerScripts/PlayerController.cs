@@ -23,6 +23,9 @@ public class PlayerController : MonoBehaviour
     [Header("LadderMovement")]
     public bool isClimbing;
 
+    [Header("HoneyMovement")]
+    public bool inHoney;
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -41,11 +44,14 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isClimbing == false)
+        if (isClimbing == false && inHoney == false)
         { Movement(); }
 
         if (isClimbing == true)
         { Climb(); }
+
+        if(inHoney == true)
+        {  HoneyMovement(); }
 
         if(facingRight == false && x < 0) { Flip(); }
         else if(facingRight == true && x > 0 ) { Flip(); }
@@ -59,6 +65,11 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
+    }
+
+    void HoneyMovement()
+    {
+        rb2D.velocity = new Vector2(x * (moveSpeed / 2), rb2D.velocity.y);
     }
 
     bool IsGrounded()
@@ -104,6 +115,18 @@ public class PlayerController : MonoBehaviour
             isClimbing = false;
         }
 
+        if (collision.gameObject.tag == "Honey")
+        {
+            inHoney = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Honey")
+        {
+            inHoney = false;
+        }
     }
 
 }
