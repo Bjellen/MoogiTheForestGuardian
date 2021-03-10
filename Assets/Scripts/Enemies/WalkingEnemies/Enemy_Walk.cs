@@ -44,6 +44,11 @@ public class Enemy_Walk : MonoBehaviour
             directionIndex = 0;
         }
 
+        if(gameObject.tag == "Friend")
+        {
+            CancelInvoke("SwitchDirection");
+            gameObject.GetComponent<MeshRenderer>().material.color = Color.green;
+        }
     }
 
     private void FixedUpdate()

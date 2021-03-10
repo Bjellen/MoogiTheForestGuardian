@@ -23,7 +23,7 @@ public class Player_PlatformFallthrough : MonoBehaviour
             Physics2D.IgnoreCollision(interactCollider, myCollider, true);
         }
 
-        if(transform.position.y < interactCollider.transform.position.y)
+        if( interactCollider && transform.position.y < interactCollider.transform.position.y)
         {
             Physics2D.IgnoreCollision(interactCollider, myCollider, false);
             interactCollider = null;
