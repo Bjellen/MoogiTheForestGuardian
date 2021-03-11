@@ -25,6 +25,7 @@ public class Flute_Aura : MonoBehaviour
 
             if (_plantCollision != null)
             {
+                growingFlower = _plantCollision.GetComponent<Growing_Flower>();
                 growingFlower.isGrowing = true;
             }
         }

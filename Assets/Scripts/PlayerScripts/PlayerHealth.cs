@@ -24,7 +24,15 @@ public class PlayerHealth : MonoBehaviour
             TakeDamage();
         }
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag(dangerTag) == true)
+        {
+            TakeDamage();
+        }
+    }
+
     void TakeDamage()
     {
         playerHealth -= 1;

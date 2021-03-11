@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
         float _distance = 1.5f;
 
         var hit = Physics2D.Raycast(_position, _direction, _distance, whatIsGround);
+
         Debug.DrawRay(_position, _direction, Color.green);
 
         return hit.collider != null;
