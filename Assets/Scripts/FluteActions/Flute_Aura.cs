@@ -16,7 +16,7 @@ public class Flute_Aura : MonoBehaviour
         Collider2D _enemyCollision = Physics2D.OverlapCircle(transform.position, auraRadius, interactables[0]);
         Collider2D _plantCollision = Physics2D.OverlapCircle(transform.position, auraRadius, interactables[1]);
 
-        if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.E)) //On[ActionName]
         {
             if (_enemyCollision != null)
             {
