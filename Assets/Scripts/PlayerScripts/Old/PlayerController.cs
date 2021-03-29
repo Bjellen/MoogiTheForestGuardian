@@ -102,7 +102,7 @@ public class PlayerController : MonoBehaviour
         {
             isClimbing = true;
         }
-        else if (collision.gameObject.tag == "LadderBottom" && y < 0)
+        else if (collision.gameObject.tag == "LadderBottom" && y < 0) //movevector.y >= 0.2
         {
             isClimbing = false;
         }
