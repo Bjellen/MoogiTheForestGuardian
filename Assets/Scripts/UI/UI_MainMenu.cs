@@ -12,12 +12,14 @@ public class UI_MainMenu : MonoBehaviour
     {
         //reset saves
         SceneManager.LoadScene(firstLevel);
+        print("Loading first level");
     }  
 
     public void Resume()
     {
         //Load saves
         SceneManager.LoadScene(currentLevel);
+        print("Loading Current Level");
     }
 
     public void QuitGame()

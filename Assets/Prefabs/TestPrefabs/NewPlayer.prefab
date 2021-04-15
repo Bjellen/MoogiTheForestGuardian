@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 159860801790206246}
   - component: {fileID: 159860801790206297}
   - component: {fileID: 159860801790206247}
+  - component: {fileID: 113525631}
   m_Layer: 0
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -237,6 +238,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &113525631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159860801790206296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d0bd4adb337c66498a19003e952bce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}
 --- !u!1 &159860801815086651
 GameObject:
   m_ObjectHideFlags: 0
