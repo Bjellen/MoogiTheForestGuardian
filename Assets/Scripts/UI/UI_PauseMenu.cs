@@ -30,18 +30,6 @@ public class UI_PauseMenu : MonoBehaviour
         }
     }
 
-    public void PauseGame()
-    {
-       if(gameIsPaused == false)
-        {
-            gameIsPaused = true;
-        }
-       else if(gameIsPaused == true)
-        {
-            gameIsPaused = false;
-        }  
-    }
-
 
     public void MainMenu()
     {
