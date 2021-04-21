@@ -14,7 +14,8 @@ public class FallingRocks : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        DropRock();
+        if (collision.gameObject.tag == "Player")
+        { DropRock(); }
     }
 
     public void DropRock()
