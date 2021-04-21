@@ -14,6 +14,8 @@ public class Enemy_Walk : MonoBehaviour
     public Transform[] points;
     public int stopTime;
 
+    public Collider2D enemyCollider;
+
     private void Update()
     {
         if (leftRight[0])
@@ -38,6 +40,14 @@ public class Enemy_Walk : MonoBehaviour
             Flip();
             leftRight[0] = true;
             leftRight[1] = false;
+        }
+
+        if (gameObject.tag == "Friend")
+        {
+            enemyCollider.isTrigger = true;
+            GetComponent<MeshRenderer>().material.color = Color.green;
+            points[0].transform.position = enemyCollider.transform.position;
+            points[1].transform.position = enemyCollider.transform.position;
         }
 
     }

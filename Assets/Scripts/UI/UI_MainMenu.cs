@@ -8,6 +8,9 @@ public class UI_MainMenu : MonoBehaviour
     public string firstLevel;
     public string currentLevel;
 
+    public GameObject MainMenuPanel;
+    public GameObject LevelselectPanel;
+
     public void NewGame()
     {
         //reset saves
@@ -26,6 +29,12 @@ public class UI_MainMenu : MonoBehaviour
     {
         Application.Quit();
         UnityEditor.EditorApplication.isPlaying = false;
-    } 
+    }
+
+    public void LeveSelect()
+    {
+        LevelselectPanel.SetActive(true);
+        MainMenuPanel.SetActive(false);
+    }
     
 }

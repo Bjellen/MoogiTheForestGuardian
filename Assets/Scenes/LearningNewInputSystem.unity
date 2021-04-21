@@ -495,7 +495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261973795}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43000022, y: -2.6708534, z: -10}
+  m_LocalPosition: {x: -1.9399998, y: -3.4308534, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -689,6 +689,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574075826}
   m_CullTransparentMesh: 1
+--- !u!61 &580023038 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 6207082268990465025, guid: 61d15af62efec3e44b0bf2fa8810e00f, type: 3}
+  m_PrefabInstance: {fileID: 8861369793782346750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &799695598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1840,11 +1845,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.41
+      value: -1.96
       objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.61
+      value: -3.37
       objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1966,7 +1971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1539224189799820497, guid: a097dc9a3e74b9b4e810d9b5a2a4cd3c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1539224189799820508, guid: a097dc9a3e74b9b4e810d9b5a2a4cd3c, type: 3}
       propertyPath: m_Pivot.x
@@ -2061,6 +2066,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6207082268990465028, guid: 61d15af62efec3e44b0bf2fa8810e00f, type: 3}
+      propertyPath: enemyCollider
+      value: 
+      objectReference: {fileID: 580023038}
+    - target: {fileID: 6207082268990465029, guid: 61d15af62efec3e44b0bf2fa8810e00f, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8861369793645580858, guid: 61d15af62efec3e44b0bf2fa8810e00f, type: 3}
       propertyPath: m_Name
       value: EnemyHolder
