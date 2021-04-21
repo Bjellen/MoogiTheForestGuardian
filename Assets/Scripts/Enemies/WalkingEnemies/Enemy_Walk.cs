@@ -5,69 +5,47 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Enemy_Walk : MonoBehaviour
 {
-    private Rigidbody2D enemyRb;
 
     [Header("Movement")]
     public float moveSpeed;
 
-    [Header("Movement Vectors")]
-    public Vector2[] moveDirections;
-    public int directionIndex;
-    [Tooltip ("Be the amount of movedirections the MoveDirection array says")]
-    public int MaxDirectionIndex;
+    public bool[] leftRight;
 
-    private bool changeDir;
-
-    private void Start()
-    {
-        enemyRb = GetComponent<Rigidbody2D>();
-
-        directionIndex = 0;
-
-        InvokeRepeating("SwitchDirection", 2, 2);
-    }
+    public Transform[] points;
+    public int stopTime;
 
     private void Update()
     {
-        if (changeDir == true)
+        if (leftRight[0])
         {
-            ChangeDirection();
-
-            changeDir = false;
+            transform.position = Vector2.MoveTowards(transform.position, points[0].position, moveSpeed * Time.deltaTime);
+        }
+        else if (leftRight[1])
+        {
+            transform.position = Vector2.MoveTowards(transform.position, points[1].position, moveSpeed * Time.deltaTime);
         }
 
-        if (directionIndex == 2) { Flip(); }
-
-        if (directionIndex >= MaxDirectionIndex)
+        if(Vector2.Distance(points[0].position,transform.position) < 0.001)
         {
+            StartCoroutine(Wait());
             FlipBack();
-            directionIndex = 0;
+            leftRight[0] = false;
+            leftRight[1] = true;
         }
-
-        if(gameObject.tag == "Friend")
+        if (Vector2.Distance(points[1].position, transform.position) < 0.001)
         {
-            CancelInvoke("SwitchDirection");
-            gameObject.GetComponent<MeshRenderer>().material.color = Color.green;
+            StartCoroutine(Wait());
+            Flip();
+            leftRight[0] = true;
+            leftRight[1] = false;
         }
+
     }
 
-    private void FixedUpdate()
+    IEnumerator Wait()
     {
-        enemyRb.velocity = moveDirections[directionIndex] * moveSpeed;
+        yield return new WaitForSeconds(stopTime);
     }
-
-    #region ChangeDirection functions
-    void ChangeDirection()
-    {
-        directionIndex++;
-    }
-
-    void SwitchDirection()
-    {
-        if(changeDir) { changeDir = false; }
-        else { changeDir = true; }
-    }
-    #endregion
 
     #region Flip functions
     void Flip()

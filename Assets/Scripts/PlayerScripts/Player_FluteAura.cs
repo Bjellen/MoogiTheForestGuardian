@@ -23,7 +23,6 @@ public class Player_FluteAura : MonoBehaviour
 
         if (plantCollision != null)
         {
-            growingFlower = plantCollision.GetComponent<Growing_Flower>();
             growingFlower.isGrowing = true;
         }
     }
@@ -32,6 +31,16 @@ public class Player_FluteAura : MonoBehaviour
     {
         enemyCollision = Physics2D.OverlapCircle(transform.position, auraRadius, interactibles[0]);
         plantCollision = Physics2D.OverlapCircle(transform.position, auraRadius, interactibles[1]);
+
+        if( plantCollision != null)
+        {
+            growingFlower = plantCollision.GetComponent<Growing_Flower>();
+        }
+        else
+        {
+            growingFlower = null;
+        }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
