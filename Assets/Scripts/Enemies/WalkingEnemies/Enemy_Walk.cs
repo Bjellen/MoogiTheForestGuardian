@@ -15,7 +15,6 @@ public class Enemy_Walk : MonoBehaviour
     public int stopTime;
 
     public Collider2D enemyCollider;
-    public SpriteRenderer spriteColour;
 
     private void Update()
     {
@@ -46,9 +45,9 @@ public class Enemy_Walk : MonoBehaviour
         if (gameObject.tag == "Friend")
         {
             enemyCollider.isTrigger = true;
-            spriteColour.color = Color.green;
-            points[0].transform.position = transform.position;
-            points[1].transform.position = transform.position;
+            GetComponent<MeshRenderer>().material.color = Color.green;
+            points[0].transform.position = enemyCollider.transform.position;
+            points[1].transform.position = enemyCollider.transform.position;
         }
 
     }
