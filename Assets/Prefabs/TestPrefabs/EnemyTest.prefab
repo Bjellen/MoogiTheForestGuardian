@@ -48,13 +48,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  moveDirections:
-  - {x: 0, y: 0}
-  - {x: 1, y: 0}
-  - {x: 0, y: 0}
-  - {x: -1, y: 0}
-  directionIndex: 0
-  MaxDirectionIndex: 4
+  leftRight: 
+  points: []
+  stopTime: 0
+  enemyCollider: {fileID: 3231918288569655637}
 --- !u!33 &3231918288569655639
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -150,4 +147,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
