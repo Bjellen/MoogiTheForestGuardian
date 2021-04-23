@@ -1,9 +1,9 @@
-cusing System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UI_MainMenu : MonoBehaviour
+public class UI_MainMenu1 : MonoBehaviour
 {
     public string firstLevel;
     public string currentLevel;
@@ -16,7 +16,7 @@ public class UI_MainMenu : MonoBehaviour
         //reset saves
         SceneManager.LoadScene(firstLevel);
         print("Loading first level");
-    }  
+    }
 
     public void Resume()
     {
@@ -28,7 +28,6 @@ public class UI_MainMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-        //UnityEditor.EditorApplication.isPlaying = false;
     }
 
     public void LeveSelect()
@@ -36,5 +35,4 @@ public class UI_MainMenu : MonoBehaviour
         LevelselectPanel.SetActive(true);
         MainMenuPanel.SetActive(false);
     }
-    
 }

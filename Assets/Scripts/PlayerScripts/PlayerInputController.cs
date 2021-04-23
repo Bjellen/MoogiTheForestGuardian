@@ -51,7 +51,7 @@ public class PlayerInputController : MonoBehaviour
         if(amountOfJump < maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
 
-        if(moveVector.y < 0.3 && interactCollider != null)
+        if(moveVector.y < 0.5 && interactCollider != null)
         { Physics2D.IgnoreCollision(interactCollider, myCollider, true);  }
 
         if(interactCollider && transform.position.y < interactCollider.transform.position.y)
