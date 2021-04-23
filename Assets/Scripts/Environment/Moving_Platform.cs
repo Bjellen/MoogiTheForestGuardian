@@ -14,7 +14,7 @@ public class Moving_Platform : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.FindGameobjectsWithTag("Player");
 
         leftRight[0] = false;
         leftRight[1] = true;
