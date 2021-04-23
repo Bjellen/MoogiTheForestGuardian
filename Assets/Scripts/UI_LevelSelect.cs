@@ -9,6 +9,8 @@ public class UI_LevelSelect : MonoBehaviour
     public string Level2;
     public string Level3;
     public string Level4;
+    //Mia la inn denne, bare slett hvis det du vil:
+    public string Level5;
 
     public GameObject MainMenuPanel;
     public GameObject LevelselectPanel;
@@ -30,6 +32,12 @@ public class UI_LevelSelect : MonoBehaviour
     public void Leve4()
     {
         SceneManager.LoadScene(Level4);
+    }
+
+    //Mia la inn denne, kan slettes hvis du vil
+    public void Leve5()
+    {
+        SceneManager.LoadScene(Level5);
     }
 
 
