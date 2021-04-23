@@ -37,6 +37,7 @@ public class PlayerInputController : MonoBehaviour
     void OnMove(InputValue value)
     {
         moveVector = value.Get<Vector2>();
+        //Debug.Log("I'm on the move now" + "x =" + moveVector.x + "y =" + moveVector.y);
     }
 
     void OnJump()
@@ -51,7 +52,7 @@ public class PlayerInputController : MonoBehaviour
         if(amountOfJump < maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
 
-        if(moveVector.y < 0.5 && interactCollider != null)
+        if(moveVector.y < 0.8 && interactCollider != null)
         { Physics2D.IgnoreCollision(interactCollider, myCollider, true);  }
 
         if(interactCollider && transform.position.y < interactCollider.transform.position.y)
