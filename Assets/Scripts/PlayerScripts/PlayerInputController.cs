@@ -52,14 +52,14 @@ public class PlayerInputController : MonoBehaviour
         if(amountOfJump < maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
 
-        if(moveVector.y < 0.8 && interactCollider != null)
-        { Physics2D.IgnoreCollision(interactCollider, myCollider, true);  }
+        //if(moveVector.y < 0.8 && interactCollider != null)
+        //{ Physics2D.IgnoreCollision(interactCollider, myCollider, true);  }
 
-        if(interactCollider && transform.position.y < interactCollider.transform.position.y)
-        {
-            Physics2D.IgnoreCollision(interactCollider, myCollider, false);
-            interactCollider = null;
-        }
+        //if(interactCollider && transform.position.y < interactCollider.transform.position.y)
+        //{
+        //    Physics2D.IgnoreCollision(interactCollider, myCollider, false);
+        //    interactCollider = null;
+        //}
     }
 
     private void FixedUpdate()
@@ -82,7 +82,7 @@ public class PlayerInputController : MonoBehaviour
 
     void Jump()
     {
-        if (IsGrounded() || amountOfJump > 0 )
+        if (IsGrounded() && amountOfJump > 0 )
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
         }
