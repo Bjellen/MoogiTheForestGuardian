@@ -52,14 +52,14 @@ public class PlayerInputController : MonoBehaviour
         if(amountOfJump < maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
 
-        //if(moveVector.y < 0.8 && interactCollider != null)
-        //{ Physics2D.IgnoreCollision(interactCollider, myCollider, true);  }
+        if (moveVector.y < -0.5 && interactCollider != null)
+        { Physics2D.IgnoreCollision(interactCollider, myCollider, true); }
 
-        //if(interactCollider && transform.position.y < interactCollider.transform.position.y)
-        //{
-        //    Physics2D.IgnoreCollision(interactCollider, myCollider, false);
-        //    interactCollider = null;
-        //}
+        if (interactCollider && transform.position.y < interactCollider.transform.position.y)
+        {
+            Physics2D.IgnoreCollision(interactCollider, myCollider, false);
+            interactCollider = null;
+        }
     }
 
     private void FixedUpdate()
@@ -134,20 +134,20 @@ public class PlayerInputController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "LadderBottom" && moveVector.y > 0)
+        if(collision.gameObject.tag == "LadderBottom" && moveVector.y > 0.5)
         {
             isClimbing = true;
         }
-        else if(collision.gameObject.tag == "LadderBottom" && moveVector.y < 0)
+        else if(collision.gameObject.tag == "LadderBottom" && moveVector.y < -0.5)
         {
             isClimbing = false;
         }
 
-        if (collision.gameObject.tag == "LadderTop" && moveVector.y < 0)
+        if (collision.gameObject.tag == "LadderTop" && moveVector.y < -0.5)
         {
             isClimbing = true;
         }
-        else if (collision.gameObject.tag == "LadderTop" && moveVector.y > 0)
+        else if (collision.gameObject.tag == "LadderTop" && moveVector.y > 0.5)
         {
             isClimbing = false;
         }
