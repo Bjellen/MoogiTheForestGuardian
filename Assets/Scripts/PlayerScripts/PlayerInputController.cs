@@ -49,7 +49,7 @@ public class PlayerInputController : MonoBehaviour
     {
         Movement();
 
-        if(amountOfJump < maxAmountOfJump)
+        if(amountOfJump > maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
 
         if (moveVector.y < -0.5 && interactCollider != null)
@@ -82,9 +82,10 @@ public class PlayerInputController : MonoBehaviour
 
     void Jump()
     {
-        if (IsGrounded() && amountOfJump > 0 )
+        if ( amountOfJump > 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
+            print("I'm jumping");
         }
     }
 
