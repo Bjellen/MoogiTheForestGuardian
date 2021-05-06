@@ -578,7 +578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435713978}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.168808, y: 7.746051, z: 0}
+  m_LocalPosition: {x: -32.168808, y: 7.746051, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1463,6 +1463,10 @@ PrefabInstance:
       propertyPath: auraRadius
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 159860801790206244, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.81
+      objectReference: {fileID: 0}
     - target: {fileID: 159860801790206245, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: jumpForce
       value: 5
@@ -1477,7 +1481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.020000458
+      value: 2.8100004
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1485,15 +1489,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -2.0511606e-15
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00000005119789
+      value: 0.00000005804618
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1.05015095e-22
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438574, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_Lens.OrthographicSize
@@ -2287,8 +2291,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833359873}
-  m_LocalRotation: {x: -2.0511606e-15, y: 0.00000005119789, z: 1.05015095e-22, w: 1}
-  m_LocalPosition: {x: -25.33, y: -1.951707, z: -10}
+  m_LocalRotation: {x: 0, y: 0.00000005804618, z: 0, w: 1}
+  m_LocalPosition: {x: -19.75, y: -1.951707, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
