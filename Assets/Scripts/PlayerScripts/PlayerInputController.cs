@@ -18,11 +18,15 @@ public class PlayerInputController : MonoBehaviour
     public float amountOfJump;
     public float maxAmountOfJump;
 
+    
+
     [Header("GroundChecks")]
     public LayerMask whatIsGround;
 
     [Header("LadderMovement")]
     public bool isClimbing;
+    public float rayDistance;
+    public LayerMask whatIsLadder;
 
     [Header("HoneyMovement")]
     public bool inHoney;
@@ -68,10 +72,44 @@ public class PlayerInputController : MonoBehaviour
         { Movement(); }
 
         if (isClimbing == true)
-        { Climb(); }
+        {   
+            Climb();
+            rb2D.gravityScale = 0;
+        }
+        else
+        {
+            rb2D.gravityScale = 1;
+        }
 
         if (inHoney == true)
         { HoneyMovement(); }
+
+        RaycastHit2D _hitInfoUp = Physics2D.Raycast(transform.position, Vector2.up, rayDistance, whatIsLadder);
+        RaycastHit2D _hitInfoDown = Physics2D.Raycast(transform.position, -Vector2.up, rayDistance, whatIsLadder);
+
+        if(_hitInfoUp.collider != null)
+        {
+            if(moveVector.y > 0)
+            {
+                isClimbing = true;
+            }
+        }
+        else
+        {
+            isClimbing = false;
+        }
+
+        if (_hitInfoDown.collider != null)
+        {
+            if (moveVector.y < 0)
+            {
+                isClimbing = true;
+            }
+        }
+        else
+        {
+            isClimbing = false;
+        }
     }
 
     #region Movement 
@@ -85,7 +123,7 @@ public class PlayerInputController : MonoBehaviour
         if ( amountOfJump > 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
-            print("I'm jumping");
+            //print("I'm jumping");
         }
     }
 
@@ -96,7 +134,8 @@ public class PlayerInputController : MonoBehaviour
 
     void Climb()
     {
-        rb2D.velocity = new Vector2(0, moveVector.y * moveSpeed);
+        rb2D.velocity = new Vector2(rb2D.velocity.x, moveVector.y * moveSpeed);
+        
     }
     #endregion
 
