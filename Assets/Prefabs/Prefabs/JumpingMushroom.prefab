@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7994749080988858320}
   - component: {fileID: 7994749080988858285}
   - component: {fileID: 7994749080988858286}
+  - component: {fileID: 90744660351377731}
   m_Layer: 0
   m_Name: JumpingMushroom
   m_TagString: Untagged
@@ -123,3 +124,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 10
+  animator: {fileID: 90744660351377731}
+--- !u!95 &90744660351377731
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7994749080988858321}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7fc8314de0f4f33498af0fa60b9f03e9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
