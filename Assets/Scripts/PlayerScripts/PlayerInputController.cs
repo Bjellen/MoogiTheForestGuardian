@@ -18,7 +18,7 @@ public class PlayerInputController : MonoBehaviour
     public float amountOfJump;
     public float maxAmountOfJump;
 
-    
+    public Animator animatior;
 
     [Header("GroundChecks")]
     public LayerMask whatIsGround;
@@ -52,6 +52,8 @@ public class PlayerInputController : MonoBehaviour
     private void Update()
     {
         Movement();
+        //Legg inn speed for karakteren
+        //animatior.SetFloat("Speed", )
 
         if(amountOfJump > maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
