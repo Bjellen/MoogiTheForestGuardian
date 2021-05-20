@@ -3,10 +3,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputController : MonoBehaviour
 {
-    [Header ("Movement Variables")]
+    [Header("Movement Variables")]
     private Vector2 moveVector;
 
-    [Header ("Player")]
+    [Header("Player")]
     private Rigidbody2D rb2D;
     private bool facingRight;
 
@@ -50,6 +50,7 @@ public class PlayerInputController : MonoBehaviour
 
     void OnJump()
     {
+        if(isGrounded)
         Jump();
     }
 
@@ -67,7 +68,7 @@ public class PlayerInputController : MonoBehaviour
         else
         { isGrounded = false; }
 
-        if(amountOfJump > maxAmountOfJump)
+        if (amountOfJump > maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
 
         if (moveVector.y < -0.5 && interactCollider != null)
@@ -84,9 +85,9 @@ public class PlayerInputController : MonoBehaviour
         else if (moveVector.x > 0.5)
         { FlipBack(); }
 
-        if (isGrounded == true) 
+        if (isGrounded == true)
         {
-        animatior.SetBool("IsJumping", false);
+            animatior.SetBool("IsJumping", false);
         }
     }
 
@@ -96,7 +97,7 @@ public class PlayerInputController : MonoBehaviour
         { Movement(); }
 
         if (isClimbing == true)
-        {   
+        {
             Climb();
             rb2D.gravityScale = 0;
         }
@@ -111,9 +112,9 @@ public class PlayerInputController : MonoBehaviour
         RaycastHit2D _hitInfoUp = Physics2D.Raycast(transform.position, Vector2.up, rayDistance, whatIsLadder);
         RaycastHit2D _hitInfoDown = Physics2D.Raycast(transform.position, -Vector2.up, rayDistance, whatIsLadder);
 
-        if(_hitInfoUp.collider != null)
+        if (_hitInfoUp.collider != null)
         {
-            if(moveVector.y > 0)
+            if (moveVector.y > 0)
             {
                 isClimbing = true;
             }
@@ -146,19 +147,20 @@ public class PlayerInputController : MonoBehaviour
 
     void Jump()
     {
-        if ( amountOfJump > 0)
+        if (amountOfJump > 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
             amountOfJump = 0;
             animatior.SetBool("IsJumping", true);
         }
 
-        if(amountOfJump <= 0)
+        else if (amountOfJump <= 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, rb2D.velocity.y);
             animatior.SetBool("IsJumping", false);
         }
     }
+
 
     void HoneyMovement()
     {
@@ -170,7 +172,7 @@ public class PlayerInputController : MonoBehaviour
     {
         rb2D.velocity = new Vector2(rb2D.velocity.x, moveVector.y * moveSpeed);
         //insert animations
-        
+
     }
     #endregion
 
@@ -208,11 +210,11 @@ public class PlayerInputController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == "LadderBottom" && moveVector.y > 0.5)
+        if (collision.gameObject.tag == "LadderBottom" && moveVector.y > 0.5)
         {
             isClimbing = true;
         }
-        else if(collision.gameObject.tag == "LadderBottom" && moveVector.y < -0.5)
+        else if (collision.gameObject.tag == "LadderBottom" && moveVector.y < -0.5)
         {
             isClimbing = false;
         }
