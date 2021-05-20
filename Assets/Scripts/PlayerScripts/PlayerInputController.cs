@@ -10,6 +10,8 @@ public class PlayerInputController : MonoBehaviour
     private Rigidbody2D rb2D;
     private bool facingRight;
 
+    public SpriteRenderer sprite;
+
     private Collider2D myCollider;
     public Collider2D interactCollider;
 
@@ -36,6 +38,7 @@ public class PlayerInputController : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     void OnMove(InputValue value)
@@ -65,6 +68,11 @@ public class PlayerInputController : MonoBehaviour
             Physics2D.IgnoreCollision(interactCollider, myCollider, false);
             interactCollider = null;
         }
+
+        if (moveVector.x < -0.5)
+        { Flip(); }
+        else if (moveVector.x > 0.5)
+        { FlipBack(); }
     }
 
     private void FixedUpdate()
@@ -209,6 +217,18 @@ public class PlayerInputController : MonoBehaviour
         {
             inHoney = false;
         }
+    }
+    #endregion
+
+    #region Flip functions
+    void Flip()
+    {
+        sprite.flipX = true;
+    }
+
+    void FlipBack()
+    {
+        sprite.flipX = false;
     }
     #endregion
 }
