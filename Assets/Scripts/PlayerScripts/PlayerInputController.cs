@@ -74,6 +74,10 @@ public class PlayerInputController : MonoBehaviour
         { Flip(); }
         else if (moveVector.x > 0.5)
         { FlipBack(); }
+        if (isGrounded == true) 
+        {
+        animatior.SetBool("IsJumping", false);
+        }
     }
 
     private void FixedUpdate()
@@ -139,10 +143,7 @@ public class PlayerInputController : MonoBehaviour
         }
     }
 
-    public void OnLanding()
-    {
-        animatior.SetBool("IsJumping", false);
-    }
+  
 
     void HoneyMovement()
     {
