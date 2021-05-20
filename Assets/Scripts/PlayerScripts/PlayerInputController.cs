@@ -118,7 +118,7 @@ public class PlayerInputController : MonoBehaviour
     {
         rb2D.velocity = new Vector2(moveVector.x * moveSpeed, rb2D.velocity.y);
         //Legg inn speed for karakteren
-        //animatior.SetFloat("Speed", )
+        animatior.SetFloat("Speed", moveVector.x);
     }
 
     void Jump()
