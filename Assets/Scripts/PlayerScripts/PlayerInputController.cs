@@ -24,6 +24,7 @@ public class PlayerInputController : MonoBehaviour
 
     [Header("GroundChecks")]
     public LayerMask whatIsGround;
+    public bool isGrounded;
 
     [Header("LadderMovement")]
     public bool isClimbing;
@@ -163,6 +164,7 @@ public class PlayerInputController : MonoBehaviour
         var hit = Physics2D.Raycast(_position, _direction, _distance, whatIsGround);
         amountOfJump += 1;
 
+
         Debug.DrawRay(_position, _direction, Color.green);
 
         return hit.collider != null;
@@ -175,6 +177,16 @@ public class PlayerInputController : MonoBehaviour
         if (collision.gameObject.CompareTag("Platform"))
         {
             interactCollider = collision.gameObject.GetComponent<Collider2D>();
+        }
+
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+
+        if (collision.gameObject.CompareTag("GrowingPlant"))
+        {
+            isGrounded = true;
         }
     }
 
@@ -216,6 +228,19 @@ public class PlayerInputController : MonoBehaviour
         if (collision.gameObject.tag == "Honey")
         {
             inHoney = false;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
+
+        if (collision.gameObject.CompareTag("GrowingPlant"))
+        {
+            isGrounded = false;
         }
     }
     #endregion

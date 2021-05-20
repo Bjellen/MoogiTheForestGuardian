@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
 
     [Header("What hurts player")]
     public string dangerTag;
+    public string killTag;
 
     [Header("What scene to load when;")]
     public string deathScene;
@@ -23,6 +24,11 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage();
         }
+
+        if (collision.gameObject.CompareTag(killTag))
+        {
+            Die();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -31,23 +37,28 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage();
         }
+
+        if (collision.gameObject.CompareTag(killTag))
+        {
+            Die();
+        }
     }
 
     void TakeDamage()
     {
         playerHealth -= 1;
-        transform.position = spawnPoint.transform.position;
         Debug.Log("I have taken damage");
 
         if(playerHealth <= 0)
         {
             Debug.Log("I have died");
-            //Die();
+            Die();
         }
     }
 
     void Die()
     {
         SceneManager.LoadScene(deathScene);
+        Debug.Log("I am dead");
     }
 }
