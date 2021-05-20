@@ -56,7 +56,16 @@ public class PlayerInputController : MonoBehaviour
     private void Update()
     {
         Movement();
+        if (IsGrounded())
+        {
+            if (amountOfJump <= 0)
+            { amountOfJump += 1; }
 
+            Debug.Log("I'm grounded");
+            isGrounded = true;
+        }
+        else
+        { isGrounded = false; }
 
         if(amountOfJump > maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
@@ -74,6 +83,7 @@ public class PlayerInputController : MonoBehaviour
         { Flip(); }
         else if (moveVector.x > 0.5)
         { FlipBack(); }
+
         if (isGrounded == true) 
         {
         animatior.SetBool("IsJumping", false);
@@ -126,7 +136,7 @@ public class PlayerInputController : MonoBehaviour
         }
     }
 
-    #region Movement 
+    #region Movement functions (eks. move, Jump)
     void Movement()
     {
         rb2D.velocity = new Vector2(moveVector.x * moveSpeed, rb2D.velocity.y);
@@ -139,11 +149,16 @@ public class PlayerInputController : MonoBehaviour
         if ( amountOfJump > 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
+            amountOfJump = 0;
             animatior.SetBool("IsJumping", true);
         }
-    }
 
-  
+        if(amountOfJump <= 0)
+        {
+            rb2D.velocity = new Vector2(rb2D.velocity.x, rb2D.velocity.y);
+            animatior.SetBool("IsJumping", false);
+        }
+    }
 
     void HoneyMovement()
     {
@@ -164,13 +179,11 @@ public class PlayerInputController : MonoBehaviour
     {
         var _position = transform.position;
         var _direction = -Vector2.up;
-        float _distance = 1.5f;
+        float _distance = 2.2f;
 
         var hit = Physics2D.Raycast(_position, _direction, _distance, whatIsGround);
-        amountOfJump += 1;
-
-
         Debug.DrawRay(_position, _direction, Color.green);
+
 
         return hit.collider != null;
     }
@@ -182,16 +195,6 @@ public class PlayerInputController : MonoBehaviour
         if (collision.gameObject.CompareTag("Platform"))
         {
             interactCollider = collision.gameObject.GetComponent<Collider2D>();
-        }
-
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-
-        if (collision.gameObject.CompareTag("GrowingPlant"))
-        {
-            isGrounded = true;
         }
     }
 
@@ -233,19 +236,6 @@ public class PlayerInputController : MonoBehaviour
         if (collision.gameObject.tag == "Honey")
         {
             inHoney = false;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
-
-        if (collision.gameObject.CompareTag("GrowingPlant"))
-        {
-            isGrounded = false;
         }
     }
     #endregion
