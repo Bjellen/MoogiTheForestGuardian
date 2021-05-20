@@ -52,8 +52,7 @@ public class PlayerInputController : MonoBehaviour
     private void Update()
     {
         Movement();
-        //Legg inn speed for karakteren
-        //animatior.SetFloat("Speed", )
+
 
         if(amountOfJump > maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
@@ -118,6 +117,8 @@ public class PlayerInputController : MonoBehaviour
     void Movement()
     {
         rb2D.velocity = new Vector2(moveVector.x * moveSpeed, rb2D.velocity.y);
+        //Legg inn speed for karakteren
+        //animatior.SetFloat("Speed", )
     }
 
     void Jump()
@@ -125,6 +126,7 @@ public class PlayerInputController : MonoBehaviour
         if ( amountOfJump > 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
+            //insert animations
             //print("I'm jumping");
         }
     }
@@ -132,11 +134,13 @@ public class PlayerInputController : MonoBehaviour
     void HoneyMovement()
     {
         rb2D.velocity = new Vector2(moveVector.x * (moveSpeed / 2), rb2D.velocity.y / 2);
+        //insert animations
     }
 
     void Climb()
     {
         rb2D.velocity = new Vector2(rb2D.velocity.x, moveVector.y * moveSpeed);
+        //insert animations
         
     }
     #endregion
