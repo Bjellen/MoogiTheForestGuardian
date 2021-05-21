@@ -85,10 +85,7 @@ public class PlayerInputController : MonoBehaviour
         else if (moveVector.x > 0.5)
         { FlipBack(); }
 
-        if (isGrounded == true)
-        {
-            animatior.SetBool("IsJumping", false);
-        }
+        animatior.SetBool("IsJumping", !isGrounded);
     }
 
     private void FixedUpdate()
@@ -151,13 +148,13 @@ public class PlayerInputController : MonoBehaviour
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
             amountOfJump = 0;
-            animatior.SetBool("IsJumping", true);
+          
         }
 
         else if (amountOfJump <= 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, rb2D.velocity.y);
-            animatior.SetBool("IsJumping", false);
+           
         }
     }
 
