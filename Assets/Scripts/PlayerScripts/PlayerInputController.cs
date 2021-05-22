@@ -20,6 +20,8 @@ public class PlayerInputController : MonoBehaviour
     public float amountOfJump;
     public float maxAmountOfJump;
 
+    public int Collectables;
+
     public Animator animatior;
 
     [Header("GroundChecks")]
