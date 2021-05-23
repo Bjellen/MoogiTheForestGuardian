@@ -16,6 +16,8 @@ public class Enemy_Walk : MonoBehaviour
 
     public Collider2D enemyCollider;
 
+    public Animator animator;
+
     private void Update()
     {
         if (leftRight[0])
