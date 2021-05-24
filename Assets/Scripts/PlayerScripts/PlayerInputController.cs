@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -33,8 +34,12 @@ public class PlayerInputController : MonoBehaviour
     public float rayDistance;
     public LayerMask whatIsLadder;
 
+    public bool onPlatform;
+
     [Header("HoneyMovement")]
     public bool inHoney;
+
+    private PlayerHealth health;
 
 
     private void Start()
@@ -42,6 +47,9 @@ public class PlayerInputController : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
         sprite = GetComponent<SpriteRenderer>();
+        health = GetComponent<PlayerHealth>();
+
+        onPlatform = false;
     }
 
     void OnMove(InputValue value)
@@ -58,7 +66,11 @@ public class PlayerInputController : MonoBehaviour
 
     private void Update()
     {
-        Movement();
+        //if (health.knockback == false) 
+        //{
+        //    Movement();
+        //}
+
         if (IsGrounded())
         {
             if (amountOfJump <= 0)
@@ -74,9 +86,11 @@ public class PlayerInputController : MonoBehaviour
         { amountOfJump = maxAmountOfJump; }
 
         if (moveVector.y < -0.5 && interactCollider != null)
-        { Physics2D.IgnoreCollision(interactCollider, myCollider, true); }
+        {   
+            Physics2D.IgnoreCollision(interactCollider, myCollider, true);
+        }
 
-        if (interactCollider && transform.position.y < interactCollider.transform.position.y)
+        if (interactCollider && transform.position.y < interactCollider.transform.position.y && onPlatform == false)
         {
             Physics2D.IgnoreCollision(interactCollider, myCollider, false);
             interactCollider = null;
@@ -92,8 +106,15 @@ public class PlayerInputController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (isClimbing == false && inHoney == false)
-        { Movement(); }
+        if(health.knockBack == false)
+        { 
+            if (isClimbing == false && inHoney == false)
+            { Movement(); }
+
+            if (inHoney == true)
+            { HoneyMovement(); }
+
+        }
 
         if (isClimbing == true)
         {
@@ -104,9 +125,6 @@ public class PlayerInputController : MonoBehaviour
         {
             rb2D.gravityScale = 1;
         }
-
-        if (inHoney == true)
-        { HoneyMovement(); }
 
         RaycastHit2D _hitInfoUp = Physics2D.Raycast(transform.position, Vector2.up, rayDistance, whatIsLadder);
         RaycastHit2D _hitInfoDown = Physics2D.Raycast(transform.position, -Vector2.up, rayDistance, whatIsLadder);
@@ -196,6 +214,7 @@ public class PlayerInputController : MonoBehaviour
         if (collision.gameObject.CompareTag("Platform"))
         {
             interactCollider = collision.gameObject.GetComponent<Collider2D>();
+            onPlatform = true;
         }
     }
 
@@ -209,24 +228,6 @@ public class PlayerInputController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "LadderBottom" && moveVector.y > 0.5)
-        {
-            isClimbing = true;
-        }
-        else if (collision.gameObject.tag == "LadderBottom" && moveVector.y < -0.5)
-        {
-            isClimbing = false;
-        }
-
-        if (collision.gameObject.tag == "LadderTop" && moveVector.y < -0.5)
-        {
-            isClimbing = true;
-        }
-        else if (collision.gameObject.tag == "LadderTop" && moveVector.y > 0.5)
-        {
-            isClimbing = false;
-        }
-
         if (collision.gameObject.tag == "Honey")
         {
             inHoney = true;
@@ -237,6 +238,11 @@ public class PlayerInputController : MonoBehaviour
         if (collision.gameObject.tag == "Honey")
         {
             inHoney = false;
+        }
+
+        if(collision.gameObject.tag == "Platform")
+        {
+            onPlatform = false;
         }
     }
     #endregion
