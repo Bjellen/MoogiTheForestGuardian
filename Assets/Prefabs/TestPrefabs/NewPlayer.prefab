@@ -66,7 +66,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159860801790206296}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.02000022, y: 1.91, z: 4.2460537}
+  m_LocalPosition: {x: 0.06, y: 1.91, z: 4.2460537}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 159860801394381934}
@@ -90,16 +90,17 @@ MonoBehaviour:
   jumpForce: 5
   amountOfJump: 1
   maxAmountOfJump: 1
+  Collectables: 0
   animatior: {fileID: 1637162399}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 136
   isGrounded: 0
   isClimbing: 0
-  rayDistance: 0
+  rayDistance: 5
   whatIsLadder:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   inHoney: 0
 --- !u!114 &159860801790206243
 MonoBehaviour:
@@ -134,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: 3
   dangerTag: Enemy
-  killTag: 
+  killTag: Kill
   deathScene: 
   spawnPoint: {fileID: 2857803126645297883}
 --- !u!114 &159860801790206242
@@ -416,7 +417,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159860802316438560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.020000458, y: -0.06085348, z: -5.7539463}
+  m_LocalPosition: {x: 0.060001373, y: 1.91, z: -5.7539463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 159860801815086648}
@@ -482,7 +483,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4353194986645202101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.05, y: -0.54, z: 0}
+  m_LocalPosition: {x: -0.05, y: -0.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 159860801394381934}
