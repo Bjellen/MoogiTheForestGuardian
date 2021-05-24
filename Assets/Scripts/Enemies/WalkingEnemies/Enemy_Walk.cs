@@ -47,9 +47,11 @@ public class Enemy_Walk : MonoBehaviour
         if (gameObject.tag == "Friend")
         {
             enemyCollider.isTrigger = true;
-            GetComponent<MeshRenderer>().material.color = Color.green;
+            //GetComponent<MeshRenderer>().material.color = Color.green;
             points[0].transform.position = enemyCollider.transform.position;
             points[1].transform.position = enemyCollider.transform.position;
+
+            //legg inn sove animasjon her :D
         }
 
     }
