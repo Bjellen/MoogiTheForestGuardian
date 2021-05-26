@@ -18,6 +18,6 @@ public class Boss_Chase : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, endOfLevel);
+        transform.position = Vector2.MoveTowards(transform.position, endOfLevel.position, moveSpeed * Time.deltaTime);
     }
 }
