@@ -20,4 +20,12 @@ public class Boss_Chase : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, endOfLevel.position, moveSpeed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Ground")
+        {
+            Destroy(collision.gameObject);
+        }
+    }
 }

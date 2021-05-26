@@ -143,6 +143,7 @@ MonoBehaviour:
   playerHealth: 3
   dangerTag: Enemy
   killTag: Kill
+  bossTag: Boss
   deathScene: 
   spawnPoint: {fileID: 2857803126645297883}
 --- !u!114 &159860801790206242
@@ -424,7 +425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159860802316438560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1000004, y: 2.2, z: -5.7539463}
+  m_LocalPosition: {x: -2.1, y: 2.2, z: -5.7539463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 159860801815086648}

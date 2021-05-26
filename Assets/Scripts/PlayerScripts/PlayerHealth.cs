@@ -20,6 +20,7 @@ public class PlayerHealth : MonoBehaviour
     [Header("What hurts player")]
     public string dangerTag;
     public string killTag;
+    public string bossTag;
 
     [Header("What scene to load when;")]
     public string deathScene;
@@ -36,8 +37,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-
         if (collision.gameObject.CompareTag(dangerTag) == true)
         {
             EnemyTransform = collision.collider.GetComponent<Transform>();
@@ -59,6 +58,11 @@ public class PlayerHealth : MonoBehaviour
         }
 
         if (collision.gameObject.CompareTag(killTag))
+        {
+            Die();
+        }
+
+        if (collision.gameObject.CompareTag(bossTag))
         {
             Die();
         }
