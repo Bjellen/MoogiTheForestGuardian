@@ -10,6 +10,7 @@ public class Boss_Chase : MonoBehaviour
     [Header("Points")]
     public Transform spawnPoint;
     public Transform endOfLevel;
+    public ParticleSystem particle;
 
     private void Start()
     {
@@ -26,6 +27,7 @@ public class Boss_Chase : MonoBehaviour
         if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Ground")
         {
             Destroy(collision.gameObject);
+            particle.Play();
         }
     }
 }

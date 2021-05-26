@@ -312,7 +312,7 @@ Transform:
   m_LocalScale: {x: 0.9949969, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &16280332
 GameObject:
@@ -354,7 +354,7 @@ Transform:
   - {fileID: 1328129729}
   - {fileID: 269554392}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &20811953
 GameObject:
@@ -436,7 +436,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &29384325
 GameObject:
@@ -451,7 +451,7 @@ GameObject:
   - component: {fileID: 29384327}
   m_Layer: 3
   m_Name: CaveFloor (22)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 33768347}
   m_Layer: 3
   m_Name: bakke4 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -937,7 +937,7 @@ Transform:
   - {fileID: 910541285}
   - {fileID: 635425478}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &136967755
 GameObject:
@@ -987,8 +987,16 @@ Transform:
   - {fileID: 474714750}
   - {fileID: 904794878}
   - {fileID: 2086693536}
+  - {fileID: 1846198067}
+  - {fileID: 1962960242}
+  - {fileID: 929161474}
+  - {fileID: 878178783}
+  - {fileID: 1486003844}
+  - {fileID: 140361119}
+  - {fileID: 767228073}
+  - {fileID: 1058585886}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &140361117
 GameObject:
@@ -1065,12 +1073,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 140361117}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 209.97, y: 14.712639, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 108.53396, y: 18.530426, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_Father: {fileID: 136967756}
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &148761004
 GameObject:
@@ -1085,7 +1093,7 @@ GameObject:
   - component: {fileID: 148761006}
   m_Layer: 3
   m_Name: CaveFloor (24)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1190,7 +1198,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7994749080988858287, guid: c76c6b32156940243829a9ed724e1e72, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 7994749080988858287, guid: c76c6b32156940243829a9ed724e1e72, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1268,7 +1276,7 @@ Transform:
   - {fileID: 585844850}
   - {fileID: 9836672}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163909188
 GameObject:
@@ -1801,7 +1809,7 @@ GameObject:
   - component: {fileID: 196291571}
   m_Layer: 3
   m_Name: CaveFloor (34)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1992,7 +2000,7 @@ GameObject:
   - component: {fileID: 236794039}
   m_Layer: 3
   m_Name: GroundLvl3 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2101,7 +2109,7 @@ GameObject:
   - component: {fileID: 249183950}
   m_Layer: 3
   m_Name: CaveFloor (29)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2319,7 +2327,7 @@ GameObject:
   - component: {fileID: 269554390}
   m_Layer: 0
   m_Name: PlatformEndRight 1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2428,7 +2436,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalScale.x
@@ -2440,7 +2448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -138
+      value: -121.3
       objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2512,7 +2520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.100006
+      value: -2.0999985
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2639,7 +2647,7 @@ GameObject:
   - component: {fileID: 276500034}
   m_Layer: 3
   m_Name: CaveFloor (45)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2735,6 +2743,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &278892750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 278892751}
+  m_Layer: 0
+  m_Name: PointB
+  m_TagString: Untagged
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &278892751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278892750}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.8, y: -5.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &285257145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2748,7 +2786,7 @@ GameObject:
   - component: {fileID: 285257147}
   m_Layer: 3
   m_Name: GroundLvl3 (9)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2857,7 +2895,7 @@ GameObject:
   - component: {fileID: 314886788}
   m_Layer: 3
   m_Name: CaveFloor (25)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2966,7 +3004,7 @@ GameObject:
   - component: {fileID: 327031355}
   m_Layer: 3
   m_Name: CaveFloor (47)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3546,7 +3584,7 @@ Transform:
   - {fileID: 373557286}
   - {fileID: 2146385534}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &401073685
 GameObject:
@@ -3561,7 +3599,7 @@ GameObject:
   - component: {fileID: 401073687}
   m_Layer: 3
   m_Name: CaveFloor (21)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3943,7 +3981,7 @@ GameObject:
   - component: {fileID: 424832227}
   m_Layer: 3
   m_Name: CaveFloor (19)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4201,7 +4239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &458004920
 GameObject:
@@ -4216,7 +4254,7 @@ GameObject:
   - component: {fileID: 458004922}
   m_Layer: 3
   m_Name: CaveFloor (42)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4644,7 +4682,7 @@ Transform:
   - {fileID: 273879282}
   - {fileID: 1980762829}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &493352822
 GameObject:
@@ -4659,7 +4697,7 @@ GameObject:
   - component: {fileID: 493352824}
   m_Layer: 3
   m_Name: GroundLvl3 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4850,7 +4888,7 @@ GameObject:
   - component: {fileID: 526988863}
   m_Layer: 3
   m_Name: bakke4 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4959,7 +4997,7 @@ GameObject:
   - component: {fileID: 536877694}
   m_Layer: 3
   m_Name: CaveFloor (18)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5301,7 +5339,7 @@ GameObject:
   - component: {fileID: 553573944}
   m_Layer: 3
   m_Name: bakke4 (5)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5488,7 +5526,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 355866326368108667, guid: dac1cf452674ee34fb9c57c06494bfb1, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 355866326368108667, guid: dac1cf452674ee34fb9c57c06494bfb1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5767,7 +5805,7 @@ GameObject:
   - component: {fileID: 593530590}
   m_Layer: 3
   m_Name: CaveFloor (37)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6080,6 +6118,36 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 635425477}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &642834869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 642834870}
+  m_Layer: 0
+  m_Name: PointA
+  m_TagString: Untagged
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &642834870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642834869}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -134.05, y: -5.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &644065225
 GameObject:
   m_ObjectHideFlags: 0
@@ -6175,7 +6243,7 @@ GameObject:
   - component: {fileID: 657510152}
   m_Layer: 3
   m_Name: CaveFloor (33)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6316,7 +6384,7 @@ Transform:
   - {fileID: 1299564967}
   - {fileID: 2097567957}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &669030292
 GameObject:
@@ -6546,6 +6614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 721937234}
   - component: {fileID: 721937233}
+  - component: {fileID: 721937235}
   m_Layer: 0
   m_Name: stone5
   m_TagString: Untagged
@@ -6616,8 +6685,34 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &721937235
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721937232}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6, y: 3.4}
+    newSize: {x: 6, y: 3.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6, y: 3.4}
+  m_EdgeRadius: 0
 --- !u!1 &730568307
 GameObject:
   m_ObjectHideFlags: 0
@@ -6698,7 +6793,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &767228071
 GameObject:
@@ -6775,12 +6870,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767228071}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 58.93, y: -3.1985364, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -42.506042, y: 0.61925006, z: 0}
   m_LocalScale: {x: 1.0575465, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_Father: {fileID: 136967756}
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &770319072
 GameObject:
@@ -6970,7 +7065,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &783502608
 GameObject:
@@ -7067,7 +7162,7 @@ GameObject:
   - component: {fileID: 787838161}
   m_Layer: 3
   m_Name: GroundLvl3 (7)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7577,7 +7672,7 @@ Transform:
   - {fileID: 1466155752}
   - {fileID: 1502796446}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &878178781
 GameObject:
@@ -7654,12 +7749,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 878178781}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 209.97, y: 0.9126363, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 108.53396, y: 4.730423, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_Father: {fileID: 136967756}
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &879211915
 GameObject:
@@ -7770,6 +7865,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!198 &884620532 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9027863204851243656, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+  m_PrefabInstance: {fileID: 5751677992785787226}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &904794877
 GameObject:
   m_ObjectHideFlags: 0
@@ -7972,7 +8072,6 @@ GameObject:
   - component: {fileID: 910541285}
   - component: {fileID: 910541288}
   - component: {fileID: 910541287}
-  - component: {fileID: 910541286}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -7994,32 +8093,6 @@ Transform:
   m_Father: {fileID: 119641375}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &910541286
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 910541284}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 1}
-  m_EdgeRadius: 0
 --- !u!23 &910541287
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8082,7 +8155,7 @@ GameObject:
   - component: {fileID: 910698891}
   m_Layer: 3
   m_Name: CaveFloor (46)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8362,12 +8435,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929161472}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 58.93, y: 14.712639, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -42.506042, y: 18.530426, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_Father: {fileID: 136967756}
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &956335838
 GameObject:
@@ -8464,7 +8537,7 @@ GameObject:
   - component: {fileID: 957048142}
   m_Layer: 3
   m_Name: CaveFloor (27)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8573,7 +8646,7 @@ GameObject:
   - component: {fileID: 958064317}
   m_Layer: 3
   m_Name: GroundLvl3 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9309,7 +9382,7 @@ GameObject:
   - component: {fileID: 1018745552}
   m_Layer: 3
   m_Name: GroundLvl3 (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9635,7 +9708,7 @@ GameObject:
   - component: {fileID: 1044994733}
   m_Layer: 3
   m_Name: CaveFloor (15)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9806,12 +9879,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1058585884}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 209.97, y: -6.1859, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 108.53396, y: -2.3681138, z: 0}
   m_LocalScale: {x: 1.0575465, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_Father: {fileID: 136967756}
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1072236499
 GameObject:
@@ -10017,7 +10090,7 @@ GameObject:
   - component: {fileID: 1094590127}
   m_Layer: 3
   m_Name: GroundLvl3 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10126,7 +10199,7 @@ GameObject:
   - component: {fileID: 1097576359}
   m_Layer: 3
   m_Name: CaveFloor (40)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10235,7 +10308,7 @@ GameObject:
   - component: {fileID: 1105604299}
   m_Layer: 3
   m_Name: CaveFloor (38)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10520,7 +10593,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1148834490
 GameObject:
@@ -10639,7 +10712,7 @@ Transform:
   - {fileID: 553573943}
   - {fileID: 2124995393}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1181851574
 GameObject:
@@ -10830,7 +10903,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
 --- !u!1 &1213432011
 GameObject:
@@ -10904,7 +10977,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1214294125
 GameObject:
@@ -10919,7 +10992,7 @@ GameObject:
   - component: {fileID: 1214294127}
   m_Layer: 3
   m_Name: CaveFloor (20)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11028,7 +11101,7 @@ GameObject:
   - component: {fileID: 1223228575}
   m_Layer: 3
   m_Name: CaveFloor (39)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11156,7 +11229,7 @@ Transform:
   - {fileID: 463348884}
   - {fileID: 1716642970}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245376601
 GameObject:
@@ -11385,7 +11458,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4258758772748089094, guid: 224acd23caaec1d44962d9cffb4af9e1, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4258758772748089094, guid: 224acd23caaec1d44962d9cffb4af9e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11664,7 +11737,7 @@ GameObject:
   - component: {fileID: 1324615942}
   m_Layer: 3
   m_Name: CaveFloor (16)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11773,7 +11846,7 @@ GameObject:
   - component: {fileID: 1328129730}
   m_Layer: 3
   m_Name: GroundLvl3 (10)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11882,7 +11955,7 @@ GameObject:
   - component: {fileID: 1356907590}
   m_Layer: 3
   m_Name: bakke4 (4)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12073,7 +12146,7 @@ GameObject:
   - component: {fileID: 1364663758}
   m_Layer: 3
   m_Name: CaveFloor (30)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12305,7 +12378,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1397659899
 GameObject:
@@ -12476,7 +12549,7 @@ Transform:
   - {fileID: 910698890}
   - {fileID: 327031354}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1405860463
 GameObject:
@@ -12638,7 +12711,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1417971701}
   m_LocalRotation: {x: -0.000000043679183, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -140.1, y: -7.3, z: -10}
+  m_LocalPosition: {x: -123.4, y: -7.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12758,7 +12831,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1442924825
 GameObject:
@@ -12773,7 +12846,7 @@ GameObject:
   - component: {fileID: 1442924827}
   m_Layer: 3
   m_Name: CaveFloor (26)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13135,12 +13208,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1486003842}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 209.97, y: 7.8126373, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 108.53396, y: 11.630424, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_Father: {fileID: 136967756}
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1492736262
 GameObject:
@@ -13282,7 +13355,7 @@ Transform:
   - {fileID: 186018542}
   - {fileID: 427508082}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1502796445
 GameObject:
@@ -13461,7 +13534,7 @@ GameObject:
   - component: {fileID: 1519847168}
   m_Layer: 3
   m_Name: GroundLvl3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13652,7 +13725,7 @@ GameObject:
   - component: {fileID: 1539837845}
   m_Layer: 3
   m_Name: CaveFloor (41)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13757,7 +13830,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4258758772748089094, guid: 224acd23caaec1d44962d9cffb4af9e1, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4258758772748089094, guid: 224acd23caaec1d44962d9cffb4af9e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13818,7 +13891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5256160931648275931, guid: e9c4c60d38bf84b48824a7f043485cd7, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5256160931648275931, guid: e9c4c60d38bf84b48824a7f043485cd7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13871,7 +13944,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 402985106546108290, guid: 788811e792a3af743ae160f4236963bb, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 402985106546108290, guid: 788811e792a3af743ae160f4236963bb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14038,6 +14111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1602035210}
   - component: {fileID: 1602035209}
+  - component: {fileID: 1602035211}
   m_Layer: 0
   m_Name: stone5 (1)
   m_TagString: Untagged
@@ -14108,8 +14182,34 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1602035211
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602035208}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6, y: 3.4}
+    newSize: {x: 6, y: 3.4}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6, y: 3.4}
+  m_EdgeRadius: 0
 --- !u!1 &1620572287
 GameObject:
   m_ObjectHideFlags: 0
@@ -14490,7 +14590,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1749525838
 GameObject:
@@ -14805,7 +14905,7 @@ GameObject:
   - component: {fileID: 1793436083}
   m_Layer: 3
   m_Name: GroundLvl3 (2)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14914,7 +15014,7 @@ GameObject:
   - component: {fileID: 1802941761}
   m_Layer: 3
   m_Name: CaveFloor (36)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15141,7 +15241,7 @@ Transform:
   - {fileID: 1114163205}
   - {fileID: 215125633}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1846198065
 GameObject:
@@ -15218,12 +15318,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1846198065}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 58.93, y: 3.9, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -42.506042, y: 7.717787, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_Father: {fileID: 136967756}
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1865917361
 GameObject:
@@ -15305,7 +15405,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1879280989
 GameObject:
@@ -15456,7 +15556,7 @@ Transform:
   - {fileID: 1935899176}
   - {fileID: 983759524}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1891790116
 GameObject:
@@ -15471,7 +15571,7 @@ GameObject:
   - component: {fileID: 1891790118}
   m_Layer: 3
   m_Name: GroundLvl3 (8)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15580,7 +15680,7 @@ GameObject:
   - component: {fileID: 1919585175}
   m_Layer: 3
   m_Name: bakke4 (3)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15969,11 +16069,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1936782496}
   m_LocalRotation: {x: -0, y: -0, z: -0.006440917, w: 0.99997926}
-  m_LocalPosition: {x: 299.4, y: -22.6, z: 0}
+  m_LocalPosition: {x: 299.4, y: -18.7, z: 0}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.738}
 --- !u!1 &1941378030
 GameObject:
@@ -15988,7 +16088,7 @@ GameObject:
   - component: {fileID: 1941378032}
   m_Layer: 3
   m_Name: CaveFloor (23)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16164,7 +16264,7 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -117.219}
 --- !u!1 &1951431200
 GameObject:
@@ -16179,7 +16279,7 @@ GameObject:
   - component: {fileID: 1951431202}
   m_Layer: 3
   m_Name: CaveFloor (17)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16350,12 +16450,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962960240}
-  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 58.93, y: 7.8126373, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -42.506042, y: 11.630424, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_Father: {fileID: 136967756}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &1964796003
 GameObject:
@@ -16370,7 +16470,7 @@ GameObject:
   - component: {fileID: 1964796005}
   m_Layer: 3
   m_Name: bakke4
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16479,7 +16579,7 @@ GameObject:
   - component: {fileID: 1973758073}
   m_Layer: 3
   m_Name: CaveFloor (32)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16874,7 +16974,7 @@ GameObject:
   - component: {fileID: 1999435176}
   m_Layer: 3
   m_Name: CaveFloor (44)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16983,7 +17083,7 @@ GameObject:
   - component: {fileID: 2004625204}
   m_Layer: 3
   m_Name: CaveFloor (43)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17092,7 +17192,7 @@ GameObject:
   - component: {fileID: 2035117006}
   m_Layer: 3
   m_Name: CaveFloor (28)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17501,7 +17601,7 @@ GameObject:
   - component: {fileID: 2081090952}
   m_Layer: 3
   m_Name: CaveFloor (35)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17715,7 +17815,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4258758772748089094, guid: 224acd23caaec1d44962d9cffb4af9e1, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4258758772748089094, guid: 224acd23caaec1d44962d9cffb4af9e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18199,7 +18299,7 @@ GameObject:
   - component: {fileID: 2124995394}
   m_Layer: 3
   m_Name: bakke4 (6)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18595,3 +18695,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &5751677992785787226
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8670415074760642456, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: particle
+      value: 
+      objectReference: {fileID: 884620532}
+    - target: {fileID: 8670415074760642456, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: endOfLevel
+      value: 
+      objectReference: {fileID: 278892751}
+    - target: {fileID: 8670415074760642456, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 642834870}
+    - target: {fileID: 8670415074760642461, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_Name
+      value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -137.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.4428616
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8670415074760642462, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce3b6b2e072ad4643b2d8200a8f5763a, type: 3}
