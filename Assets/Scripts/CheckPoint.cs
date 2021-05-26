@@ -5,6 +5,7 @@ using UnityEngine;
 public class CheckPoint : MonoBehaviour
 {
     private CheckMaster cm;
+    public ParticleSystem particle;
 
     void Start()
     {
@@ -12,9 +13,10 @@ public class CheckPoint : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Player") && cm.lastCheckPointPos != (Vector2)transform.position)
         {
             cm.lastCheckPointPos = transform.position;
+            particle.Play();
         }
     }
 }

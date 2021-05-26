@@ -50,7 +50,9 @@ public class Enemy_Walk : MonoBehaviour
             //GetComponent<MeshRenderer>().material.color = Color.green;
             points[0].transform.position = enemyCollider.transform.position;
             points[1].transform.position = enemyCollider.transform.position;
-
+            animator.applyRootMotion = false;
+            animator.SetTrigger("Sleep");
+            this.enabled = false;
             //legg inn sove animasjon her :D
         }
 

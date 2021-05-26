@@ -34,10 +34,11 @@ public class Player_FluteAura : MonoBehaviour
 
         if( plantCollision != null)
         {
-            growingFlower = plantCollision.GetComponent<Growing_Flower>();
+            growingFlower = plantCollision.GetComponentInParent<Growing_Flower>();
         }
         else
         {
+            growingFlower.isGrowing = false;
             growingFlower = null;
         }
 
