@@ -47,6 +47,7 @@ public class PlayerInputController : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
         sprite = GetComponent<SpriteRenderer>();
+
         health = GetComponent<PlayerHealth>();
 
         onPlatform = false;
@@ -66,10 +67,10 @@ public class PlayerInputController : MonoBehaviour
 
     private void Update()
     {
-        //if (health.knockback == false) 
-        //{
-        //    Movement();
-        //}
+        if (health.knockBack == false)
+        {
+            Movement();
+        }
 
         if (IsGrounded())
         {
