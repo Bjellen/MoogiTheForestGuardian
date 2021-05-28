@@ -18,6 +18,10 @@ public class Enemy_Walk : MonoBehaviour
 
     public Animator animator;
 
+    private void Start()
+    {
+        GetComponentInChildren<PlayAudioClip>().PlayAudio();
+    }
     private void Update()
     {
         if (leftRight[0])
@@ -46,6 +50,7 @@ public class Enemy_Walk : MonoBehaviour
 
         if (gameObject.tag == "Friend")
         {
+            GetComponentInChildren<PlayAudioClip>().AudioStop();
             enemyCollider.isTrigger = true;
             //GetComponent<MeshRenderer>().material.color = Color.green;
             points[0].transform.position = enemyCollider.transform.position;
@@ -53,6 +58,7 @@ public class Enemy_Walk : MonoBehaviour
             animator.applyRootMotion = false;
             animator.SetTrigger("Sleep");
             this.enabled = false;
+
             //legg inn sove animasjon her :D
         }
 

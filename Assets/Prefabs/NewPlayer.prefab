@@ -51,6 +51,7 @@ GameObject:
   - component: {fileID: 159860801790206247}
   - component: {fileID: 113525631}
   - component: {fileID: 1637162399}
+  - component: {fileID: 5102603659619072793}
   m_Layer: 0
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -306,6 +307,14 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!81 &5102603659619072793
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159860801790206296}
+  m_Enabled: 1
 --- !u!1 &159860801815086651
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,7 +434,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159860802316438560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1, y: 2.2, z: -5.7539463}
+  m_LocalPosition: {x: -2.1000004, y: 2.2, z: -5.7539463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 159860801815086648}

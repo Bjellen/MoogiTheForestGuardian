@@ -18,4 +18,8 @@ public class PlayAudioClip : MonoBehaviour
     {
         source = GetComponent<AudioSource>();
     }
+    public void AudioStop()
+    {
+        source.Stop();
+    }
 }
