@@ -2182,7 +2182,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 964036205}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.84, y: -2.17, z: 0}
+  m_LocalPosition: {x: 40.89, y: -2.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2248,7 +2248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8012930213960076159, guid: ec7966b0ed8f85b4ba7bc2a58b831824, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.91551
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 8012930213960076159, guid: ec7966b0ed8f85b4ba7bc2a58b831824, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2761,7 +2761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4.2460537
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2882,7 +2882,7 @@ MonoBehaviour:
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
   m_BoundingShape2D: {fileID: 1633355294}
-  m_ConfineScreenEdges: 0
+  m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!1 &1162067168
 GameObject:
@@ -4104,7 +4104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afae9b97fb3d69c4e88328a86c69cfdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckPointPos: {x: 39.62, y: -2.17}
+  lastCheckPointPos: {x: -30, y: -2}
 --- !u!4 &1553825679
 Transform:
   m_ObjectHideFlags: 0
@@ -4113,7 +4113,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553825677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.02539, y: -0.667558, z: -91.34541}
+  m_LocalPosition: {x: -30, y: -2, z: -91.34541}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4440,10 +4440,10 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -64, y: 20}
-      - {x: -64, y: -9.26745}
-      - {x: -64, y: -12}
-      - {x: -6, y: -12}
-      - {x: 56, y: -12}
+      - {x: -64, y: -10}
+      - {x: -64, y: -16}
+      - {x: -6, y: -16}
+      - {x: 56, y: -16}
       - {x: 56, y: 5}
       - {x: 56, y: 20}
 --- !u!4 &1633355295
@@ -4454,7 +4454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633355293}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.988913, y: 6.773725, z: -436.15918}
+  m_LocalPosition: {x: 25.988913, y: 6.773725, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4838,7 +4838,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833359873}
   m_LocalRotation: {x: 0.000000033594205, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.630001, y: -1.8799999, z: -10}
+  m_LocalPosition: {x: -17.630001, y: -1.8799999, z: -5.7539463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
