@@ -12,6 +12,11 @@ public class UI_Health : MonoBehaviour
     public Sprite fullHeart;
     public Sprite emptyHeart;
 
+    private void Awake()
+    {
+        healthVar = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+    }
+
     void Update()
     {
         if(healthVar.playerHealth > numberOfHearts)

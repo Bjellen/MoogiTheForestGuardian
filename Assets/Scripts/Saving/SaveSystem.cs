@@ -11,6 +11,7 @@ public class SaveSystem : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
         Load();
     }
 
@@ -40,16 +41,16 @@ public class SaveData
     [Header("Settings")]
     public bool music;
     public bool sfx;
+    public Vector3 spawn;
 
     [Space(10)]
     public bool[] levels;
 
 
-
-    public SaveData(bool _music, bool _sfx, bool[] _levels)
+    public SaveData(/*bool _music, bool _sfx,*/ bool[] _levels)
     {
-        this.music = _music;
-        this.sfx = _sfx;
+        //this.music = _music;
+        //this.sfx = _sfx;
         this.levels = _levels;
 
     }

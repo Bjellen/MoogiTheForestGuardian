@@ -5,39 +5,45 @@ using UnityEngine.SceneManagement;
 
 public class UI_LevelSelect : MonoBehaviour
 {
-    public string Level1;
-    public string Level2;
-    public string Level3;
-    public string Level4;
+    public string houselevel;
+    public string level1;
+    public string level2;
+    public string level3;
     //Mia la inn denne, bare slett hvis det du vil:
-    public string Level5;
+    public string level4;
+    public string bossLevel;
 
     public GameObject MainMenuPanel;
     public GameObject LevelselectPanel;
 
-    public void Level()
+    public void House()
     {
-        SceneManager.LoadScene(Level1);
+        SceneManager.LoadScene(houselevel);
     }
-    public void Leve2()
+    public void Level1()
     {
-        SceneManager.LoadScene(Level2);
-    }
-
-    public void Leve3()
-    {
-        SceneManager.LoadScene(Level3);
+        SceneManager.LoadScene(level1);
     }
 
-    public void Leve4()
+    public void Level2()
     {
-        SceneManager.LoadScene(Level4);
+        SceneManager.LoadScene(level2);
+    }
+
+    public void Level3()
+    {
+        SceneManager.LoadScene(level3);
     }
 
     //Mia la inn denne, kan slettes hvis du vil
-    public void Leve5()
+    public void Level4()
     {
-        SceneManager.LoadScene(Level5);
+        SceneManager.LoadScene(level4);
+    }
+
+    public void Boss()
+    {
+        SceneManager.LoadScene(bossLevel);
     }
 
 
