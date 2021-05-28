@@ -202,7 +202,7 @@ public class PlayerInputController : MonoBehaviour
         float _distance = 2.2f;
 
         var hit = Physics2D.Raycast(_position, _direction, _distance, whatIsGround);
-        Debug.DrawRay(_position, _direction, Color.green);
+        Debug.DrawRay(_position, _direction * _distance, Color.green);
 
 
         return hit.collider != null;
