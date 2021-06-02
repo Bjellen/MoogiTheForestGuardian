@@ -46,12 +46,12 @@ GameObject:
   - component: {fileID: 159860801790206243}
   - component: {fileID: 5406271486073113262}
   - component: {fileID: 159860801790206242}
-  - component: {fileID: 159860801790206246}
   - component: {fileID: 159860801790206297}
   - component: {fileID: 159860801790206247}
   - component: {fileID: 113525631}
   - component: {fileID: 1637162399}
   - component: {fileID: 5102603659619072793}
+  - component: {fileID: 1553699778225839043}
   m_Layer: 0
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -177,32 +177,6 @@ MonoBehaviour:
   m_DefaultActionMap: Mobile
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!61 &159860801790206246
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159860801790206296}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.003170848, y: 0.00878334}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.45, y: 4.1}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.1670415, y: 4.0941668}
-  m_EdgeRadius: 0
 --- !u!50 &159860801790206297
 Rigidbody2D:
   serializedVersion: 4
@@ -315,6 +289,22 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159860801790206296}
   m_Enabled: 1
+--- !u!70 &1553699778225839043
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159860801790206296}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.080230236, y: 0}
+  m_Size: {x: 1, y: 4.1}
+  m_Direction: 0
 --- !u!1 &159860801815086651
 GameObject:
   m_ObjectHideFlags: 0

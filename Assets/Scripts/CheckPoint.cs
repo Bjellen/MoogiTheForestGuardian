@@ -17,6 +17,7 @@ public class CheckPoint : MonoBehaviour
         {
             cm.lastCheckPointPos = transform.position;
             particle.Play();
+            GetComponentInChildren<PlayAudioClip>().PlayAudio();
         }
     }
 }
