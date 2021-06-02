@@ -24,6 +24,14 @@ public class PlayerInputController : MonoBehaviour
     public int Collectables;
 
     public Animator animatior;
+
+    [Header("Audio")]
+    public AudioClip[] movementSound;
+    public AudioClip honeySound;
+    public AudioClip jumpingSound;
+    public float pitchMin, pitchMax;
+    public int movementIndex;
+    public bool isMoving;
     AudioSource audioScr;
 
     [Header("GroundChecks")]
@@ -42,6 +50,10 @@ public class PlayerInputController : MonoBehaviour
 
     private PlayerHealth health;
 
+    private void Awake()
+    {
+        audioScr = GetComponent<AudioSource>();
+    }
 
     private void Start()
     {
@@ -71,6 +83,15 @@ public class PlayerInputController : MonoBehaviour
         if (health.knockBack == false)
         {
             Movement();
+        }
+
+        if (isMoving == true)
+        {
+            PlayMovementAudio();
+        }
+        else
+        {
+            AudioStop();
         }
 
         if (IsGrounded())
@@ -111,7 +132,7 @@ public class PlayerInputController : MonoBehaviour
         if(health.knockBack == false)
         { 
             if (isClimbing == false && inHoney == false)
-            { Movement(); }
+            { Movement();}
 
             if (inHoney == true)
             { HoneyMovement(); }
@@ -159,8 +180,11 @@ public class PlayerInputController : MonoBehaviour
     #region Movement functions (eks. move, Jump)
     void Movement()
     {
+       
         rb2D.velocity = new Vector2(moveVector.x * moveSpeed, rb2D.velocity.y);
         animatior.SetFloat("Speed", moveVector.x);
+        //PlayMovementAudio();
+        isMoving = true;
     }
 
     void Jump()
@@ -169,7 +193,7 @@ public class PlayerInputController : MonoBehaviour
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
             amountOfJump = 0;
-          
+            PlayJumpAudio();
         }
 
         else if (amountOfJump <= 0)
@@ -183,17 +207,39 @@ public class PlayerInputController : MonoBehaviour
     void HoneyMovement()
     {
         rb2D.velocity = new Vector2(moveVector.x * (moveSpeed / 2), rb2D.velocity.y / 2);
-        //insert animations
+        PlayHoneyAudio();
     }
 
     void Climb()
     {
         rb2D.velocity = new Vector2(rb2D.velocity.x, moveVector.y * moveSpeed);
-        //insert animations
 
     }
     #endregion
+    void PlayMovementAudio()
+    {
+        audioScr.clip = movementSound[movementIndex];
+        //audioScr.pitch = Random.Range(pitchMin, pitchMax);
+        audioScr.Play();
+       
+    }
+    void PlayJumpAudio()
+    {
+        audioScr.clip = jumpingSound;
+        audioScr.pitch = Random.Range(pitchMin, pitchMax);
+        audioScr.Play();
+    }
 
+    void PlayHoneyAudio()
+    {
+        audioScr.clip = honeySound;
+        audioScr.pitch = Random.Range(pitchMin, pitchMax);
+        audioScr.Play();
+    }
+    public void AudioStop()
+    {
+        audioScr.Stop();
+    }
     #region Extra checks
     bool IsGrounded()
     {
