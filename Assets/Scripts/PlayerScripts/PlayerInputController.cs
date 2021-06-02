@@ -24,6 +24,7 @@ public class PlayerInputController : MonoBehaviour
     public int Collectables;
 
     public Animator animatior;
+    AudioSource audioScr;
 
     [Header("GroundChecks")]
     public LayerMask whatIsGround;
@@ -159,7 +160,6 @@ public class PlayerInputController : MonoBehaviour
     void Movement()
     {
         rb2D.velocity = new Vector2(moveVector.x * moveSpeed, rb2D.velocity.y);
-        //Legg inn speed for karakteren
         animatior.SetFloat("Speed", moveVector.x);
     }
 
