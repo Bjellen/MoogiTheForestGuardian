@@ -32,6 +32,7 @@ public class PlayerInputController : MonoBehaviour
     public float pitchMin, pitchMax;
     public int movementIndex;
     public bool isMoving;
+    bool _jumpSound;
     AudioSource audioScr;
 
     [Header("GroundChecks")]
@@ -63,6 +64,8 @@ public class PlayerInputController : MonoBehaviour
 
         health = GetComponent<PlayerHealth>();
 
+        audioScr.clip = movementSound[movementIndex];
+
         onPlatform = false;
     }
 
@@ -74,25 +77,13 @@ public class PlayerInputController : MonoBehaviour
 
     void OnJump()
     {
-        if(isGrounded)
+        if (isGrounded)
         Jump();
     }
 
     private void Update()
     {
-        if (health.knockBack == false)
-        {
-            Movement();
-        }
-
-        if (isMoving == true)
-        {
-            PlayMovementAudio();
-        }
-        else
-        {
-            AudioStop();
-        }
+        
 
         if (IsGrounded())
         {
@@ -137,6 +128,7 @@ public class PlayerInputController : MonoBehaviour
             if (inHoney == true)
             { HoneyMovement(); }
 
+            Movement();
         }
 
         if (isClimbing == true)
@@ -183,7 +175,7 @@ public class PlayerInputController : MonoBehaviour
        
         rb2D.velocity = new Vector2(moveVector.x * moveSpeed, rb2D.velocity.y);
         animatior.SetFloat("Speed", moveVector.x);
-        //PlayMovementAudio();
+        PlayMovementAudio();
         isMoving = true;
     }
 
@@ -193,6 +185,7 @@ public class PlayerInputController : MonoBehaviour
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
             amountOfJump = 0;
+            _jumpSound = true;
             PlayJumpAudio();
         }
 
@@ -207,7 +200,7 @@ public class PlayerInputController : MonoBehaviour
     void HoneyMovement()
     {
         rb2D.velocity = new Vector2(moveVector.x * (moveSpeed / 2), rb2D.velocity.y / 2);
-        PlayHoneyAudio();
+        
     }
 
     void Climb()
@@ -216,30 +209,39 @@ public class PlayerInputController : MonoBehaviour
 
     }
     #endregion
+
+    #region Movement Audio
     void PlayMovementAudio()
     {
-        audioScr.clip = movementSound[movementIndex];
-        //audioScr.pitch = Random.Range(pitchMin, pitchMax);
-        audioScr.Play();
-       
+        
+        if (audioScr.isPlaying && moveVector.x == 0 && isGrounded && _jumpSound == false )
+        {
+            audioScr.Stop();
+        }
+        else if(!audioScr.isPlaying && moveVector.x != 0 && isGrounded)
+        {
+            //audioScr.pitch = Random.Range(pitchMin, pitchMax);
+            if(inHoney == true)
+            {
+                audioScr.clip = honeySound;
+            }
+            else
+            {
+                audioScr.clip = movementSound[movementIndex];
+            }
+            audioScr.Play();
+        }
+               
     }
     void PlayJumpAudio()
     {
-        audioScr.clip = jumpingSound;
+        
         audioScr.pitch = Random.Range(pitchMin, pitchMax);
-        audioScr.Play();
+        audioScr.PlayOneShot(jumpingSound);
     }
 
-    void PlayHoneyAudio()
-    {
-        audioScr.clip = honeySound;
-        audioScr.pitch = Random.Range(pitchMin, pitchMax);
-        audioScr.Play();
-    }
-    public void AudioStop()
-    {
-        audioScr.Stop();
-    }
+    #endregion
+
     #region Extra checks
     bool IsGrounded()
     {
@@ -285,11 +287,13 @@ public class PlayerInputController : MonoBehaviour
         if (collision.gameObject.tag == "Honey")
         {
             inHoney = false;
+            
         }
 
         if(collision.gameObject.tag == "Platform")
         {
             onPlatform = false;
+            
         }
     }
     #endregion
