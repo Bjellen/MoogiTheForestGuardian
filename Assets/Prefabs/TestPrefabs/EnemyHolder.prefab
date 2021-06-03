@@ -157,7 +157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8861369794198467362}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.69, y: -0.4, z: 0}
+  m_LocalPosition: {x: -4.56, y: -0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8861369793645580859}
@@ -272,6 +272,10 @@ PrefabInstance:
       value: EnemyTest
       objectReference: {fileID: 0}
     - target: {fileID: 3231918288569655632, guid: 53eedc547153be749b37aba2d15f0a3e, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2043701069}
+    - target: {fileID: 3231918288569655632, guid: 53eedc547153be749b37aba2d15f0a3e, type: 3}
       propertyPath: moveSpeed
       value: 2
       objectReference: {fileID: 0}
@@ -345,7 +349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3231918288569655638, guid: 53eedc547153be749b37aba2d15f0a3e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.98
+      value: 1.72
       objectReference: {fileID: 0}
     - target: {fileID: 3231918288569655638, guid: 53eedc547153be749b37aba2d15f0a3e, type: 3}
       propertyPath: m_LocalPosition.y
