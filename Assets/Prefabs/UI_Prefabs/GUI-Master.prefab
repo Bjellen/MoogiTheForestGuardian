@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 5160258220896000810}
   m_Layer: 0
   m_Name: GUI-Master
-  m_TagString: Untagged
+  m_TagString: GUIMaster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,9 +226,25 @@ PrefabInstance:
     m_TransformParent: {fileID: 5160258220896000810}
     m_Modifications:
     - target: {fileID: 1488320180379291562, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
+      propertyPath: fullHeart
+      value: 
+      objectReference: {fileID: 21300000, guid: a1e632137f4bf3a49b2fef52bfefda99, type: 3}
+    - target: {fileID: 1488320180379291562, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
       propertyPath: healthVar
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1488320180379291562, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
+      propertyPath: emptyHeart
+      value: 
+      objectReference: {fileID: 21300000, guid: 9fe9bb86b0ae851408a0ab48d49097be, type: 3}
+    - target: {fileID: 1488320180850194352, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a1e632137f4bf3a49b2fef52bfefda99, type: 3}
+    - target: {fileID: 1488320181642992508, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a1e632137f4bf3a49b2fef52bfefda99, type: 3}
     - target: {fileID: 1488320182014490579, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
       propertyPath: m_Name
       value: Health UI
@@ -317,6 +333,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1488320182208015343, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a1e632137f4bf3a49b2fef52bfefda99, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
 --- !u!224 &5160258220304630373 stripped
@@ -331,6 +351,62 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5160258220896000810}
     m_Modifications:
+    - target: {fileID: 795582203933211446, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 795582203933211446, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 795582203933211849, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 97541efa75589ec45a7e070f1fda6634, type: 3}
+    - target: {fileID: 795582203933211849, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 795582205228185807, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a5b5472cf978bee43a4d042775a6b2df, type: 3}
+    - target: {fileID: 795582205228185807, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570625896319543545, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b5e5c573ac48cb549abf5720022f4ac7, type: 3}
+    - target: {fileID: 2570625896319543545, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570625896319543545, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570625896319543545, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570625896319543545, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570625896391793591, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 78239dfd7a4eb5648a10b7fc84eb748f, type: 3}
+    - target: {fileID: 2570625896567128628, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a3d81894d8f1f14a84605ec58640dc5, type: 3}
+    - target: {fileID: 2570625896567128628, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2570625897836217260, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
       propertyPath: m_Name
       value: UI Controller
