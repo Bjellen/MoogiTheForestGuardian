@@ -85,7 +85,7 @@ public class PlayerInputController : MonoBehaviour
 
     private void Update()
     {
-        
+        Movement();
 
         if (IsGrounded())
         {
@@ -130,7 +130,7 @@ public class PlayerInputController : MonoBehaviour
             if (inHoney == true)
             { HoneyMovement(); }
 
-            Movement();
+            
         }
 
         if (isClimbing == true)
@@ -201,8 +201,7 @@ public class PlayerInputController : MonoBehaviour
 
     void HoneyMovement()
     {
-        rb2D.velocity = new Vector2(moveVector.x * (moveSpeed / 2), rb2D.velocity.y / 2);
-        
+        rb2D.velocity = new Vector2(moveVector.x * (moveSpeed / 2), rb2D.velocity.y / 2);      
     }
 
     void Climb()
