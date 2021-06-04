@@ -330,7 +330,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 069d9f254c9c1af4a8d44036be033807, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.37
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -16005,6 +16005,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1057083533, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057083533, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.4039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057083533, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057083533, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.86274517
+      objectReference: {fileID: 0}
     - target: {fileID: 159860801394381921, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_Name
       value: NewPlayer

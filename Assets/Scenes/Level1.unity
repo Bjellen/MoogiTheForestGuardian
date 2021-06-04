@@ -5646,6 +5646,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1057083533, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.076254874
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057083533, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.3962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 1057083533, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.22253127
+      objectReference: {fileID: 0}
     - target: {fileID: 1145979413, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_BoundingShape2D
       value: 
