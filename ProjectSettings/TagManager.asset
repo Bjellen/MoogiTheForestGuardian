@@ -20,6 +20,7 @@ TagManager:
   - Boss
   - SaveSystem
   - GUIMaster
+  - CollectableAudio
   layers:
   - Default
   - TransparentFX
@@ -68,4 +69,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 209523719
+    locked: 0
+  - name: Big Trees
+    uniqueID: 3117732513
     locked: 0

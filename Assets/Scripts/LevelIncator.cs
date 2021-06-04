@@ -10,11 +10,13 @@ public class LevelIncator : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInputController>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerInputController>();
     }
 
     private void Start()
     {
         player.movementIndex = levelNr;
     }
+
+    
 }

@@ -7,9 +7,8 @@ public class UI_TextBoxPopUP : MonoBehaviour
 {
     public GameObject textBox;
     public TMP_Text TMPObject;
-    public string[] textLines;
-    public int textIndex;
-    public int MaxtextIndex;
+    public string textLine;
+
 
     private void Start()
     {
@@ -19,21 +18,8 @@ public class UI_TextBoxPopUP : MonoBehaviour
     public void PopUp()
     {
         textBox.SetActive(true);
-        textIndex = 0;
-        TMPObject.text = textLines[textIndex];
+        TMPObject.text = textLine;
     }
-
-    public void NextText()
-    {
-        textIndex+= 1;
-        TMPObject.text = textLines[textIndex];
-
-        if(textIndex == MaxtextIndex + 1)
-        {
-            textBox.SetActive(false);
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")

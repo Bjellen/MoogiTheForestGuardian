@@ -25,6 +25,8 @@ public class PlayerInputController : MonoBehaviour
 
     public Animator animatior;
 
+    public ParticleSystem dust;
+
     [Header("Audio")]
     public AudioClip[] movementSound;
     public AudioClip honeySound;
@@ -83,7 +85,7 @@ public class PlayerInputController : MonoBehaviour
 
     private void Update()
     {
-        
+        Movement();
 
         if (IsGrounded())
         {
@@ -128,7 +130,7 @@ public class PlayerInputController : MonoBehaviour
             if (inHoney == true)
             { HoneyMovement(); }
 
-            Movement();
+            
         }
 
         if (isClimbing == true)
@@ -172,7 +174,6 @@ public class PlayerInputController : MonoBehaviour
     #region Movement functions (eks. move, Jump)
     void Movement()
     {
-       
         rb2D.velocity = new Vector2(moveVector.x * moveSpeed, rb2D.velocity.y);
         animatior.SetFloat("Speed", moveVector.x);
         PlayMovementAudio();
@@ -181,6 +182,7 @@ public class PlayerInputController : MonoBehaviour
 
     void Jump()
     {
+        CreateDust();
         if (amountOfJump > 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
@@ -199,8 +201,7 @@ public class PlayerInputController : MonoBehaviour
 
     void HoneyMovement()
     {
-        rb2D.velocity = new Vector2(moveVector.x * (moveSpeed / 2), rb2D.velocity.y / 2);
-        
+        rb2D.velocity = new Vector2(moveVector.x * (moveSpeed / 2), rb2D.velocity.y / 2);      
     }
 
     void Climb()
@@ -309,4 +310,9 @@ public class PlayerInputController : MonoBehaviour
         sprite.flipX = false;
     }
     #endregion
+
+    void CreateDust()
+    {
+        dust.Play();
+    }
 }
