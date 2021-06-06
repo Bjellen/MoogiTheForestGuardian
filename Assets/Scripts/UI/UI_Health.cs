@@ -14,7 +14,7 @@ public class UI_Health : MonoBehaviour
 
     private void Awake()
     {
-        healthVar = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        healthVar = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<PlayerHealth>();
     }
 
     void Update()

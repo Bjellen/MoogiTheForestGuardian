@@ -5,18 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerPos : MonoBehaviour
 {
-    private CheckMaster cm;
+    public CheckMaster cm;
 
     void Start()
     {
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckMaster>();
         transform.position = cm.lastCheckPointPos;
-    }
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
     }
 }
