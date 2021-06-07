@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1539224189799820498, guid: a097dc9a3e74b9b4e810d9b5a2a4cd3c, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1539224189799820508, guid: a097dc9a3e74b9b4e810d9b5a2a4cd3c, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -276,6 +280,10 @@ PrefabInstance:
     - target: {fileID: 1488320182014490579, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
       propertyPath: m_Name
       value: Health UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 1488320182014490589, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1488320182014490591, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
       propertyPath: m_Pivot.x
@@ -518,6 +526,10 @@ PrefabInstance:
     - target: {fileID: 2570625897836217260, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
       propertyPath: m_Name
       value: UI Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 2570625897836217262, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2570625897836217264, guid: 52cb504dddd983d43981d6c27982fc2a, type: 3}
       propertyPath: m_Pivot.x
