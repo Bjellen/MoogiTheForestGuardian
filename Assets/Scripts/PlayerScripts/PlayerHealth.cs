@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         PlayerRB = GetComponent<Rigidbody2D>();
-
+        playerHealth = 3;
         PlayerTransform = GetComponent<Transform>();
     }
 
