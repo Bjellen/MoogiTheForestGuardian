@@ -13,7 +13,32 @@ public class Player_FluteAura : MonoBehaviour
 
     private Collider2D enemyCollision;
     private Collider2D plantCollision;
+    public Animator animator;
 
+    private MobileInput mobileInput;
+    private bool isPlaying;
+
+    private void Awake()
+    {
+        mobileInput = new MobileInput();
+        isPlaying = false;
+    }
+
+    private void OnEnable()
+    {
+        mobileInput.Enable(); 
+    }
+
+    private void OnDisable()
+    {
+        mobileInput.Disable();
+    }
+
+    private void Start()
+    {
+        mobileInput.Mobile.FlutePlay.started += _ => isPlaying = true;
+        mobileInput.Mobile.FlutePlay.canceled += _ => isPlaying = false;
+    }
     void OnFlutePlay()
     {
         if (enemyCollision != null)
@@ -25,6 +50,8 @@ public class Player_FluteAura : MonoBehaviour
         {
             growingFlower.isGrowing = true;
         }
+        
+
     }
 
     private void Update()
@@ -41,6 +68,7 @@ public class Player_FluteAura : MonoBehaviour
             growingFlower.isGrowing = false;
             growingFlower = null;
         }
+        animator.SetBool("IsPlaying", isPlaying);
 
     }
 
