@@ -85,13 +85,14 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("I have died");
             knockBack = false;
-            PlayerTransform.position = spawnPoint.transform.position;
-            //Die();
+            //PlayerTransform.position = spawnPoint.transform.position;
+            Die();
         }
     }
 
     void Die()
     {
+        playerHealth = 3;
         SceneManager.LoadScene(deathScene);
         Debug.Log("I am dead");
     }
