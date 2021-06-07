@@ -8380,18 +8380,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 243839838}
     m_Modifications:
-    - target: {fileID: 7745565686294343056, guid: 217f995ae516d534ebd060adab010585, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7745565686505035981, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1833359875}
-    - target: {fileID: 7745565686505035983, guid: 217f995ae516d534ebd060adab010585, type: 3}
-      propertyPath: m_BlockingMask.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7745565686509192472, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8439,10 +8431,6 @@ PrefabInstance:
     - target: {fileID: 7745565686509192474, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_Name
       value: NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 7745565687059822886, guid: 217f995ae516d534ebd060adab010585, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 217f995ae516d534ebd060adab010585, type: 3}
