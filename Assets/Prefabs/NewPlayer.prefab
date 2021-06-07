@@ -222,7 +222,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 0.59607846}
+      maxColor: {r: 0.22253127, g: 0.3962264, b: 0.076254874, a: 0.59607846}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -4942,6 +4942,7 @@ MonoBehaviour:
   - serializedVersion: 2
     m_Bits: 128
   growingFlower: {fileID: 0}
+  animator: {fileID: 1637162399}
 --- !u!114 &5406271486073113262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5232,6 +5233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67c4851527cf8a94782b0b8ffaa1e1b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cm: {fileID: 0}
 --- !u!1 &159860801815086651
 GameObject:
   m_ObjectHideFlags: 0
