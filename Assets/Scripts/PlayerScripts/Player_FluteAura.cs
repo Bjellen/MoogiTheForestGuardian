@@ -18,6 +18,7 @@ public class Player_FluteAura : MonoBehaviour
     private MobileInput mobileInput;
     private bool isPlaying;
 
+
     private void Awake()
     {
         mobileInput = new MobileInput();
@@ -49,8 +50,7 @@ public class Player_FluteAura : MonoBehaviour
         if (plantCollision != null)
         {
             growingFlower.isGrowing = true;
-        }
-        
+        }    
 
     }
 
