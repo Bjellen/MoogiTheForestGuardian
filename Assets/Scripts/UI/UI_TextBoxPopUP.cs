@@ -28,6 +28,14 @@ public class UI_TextBoxPopUP : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            PopUp();
+        }
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         textBox.SetActive(false);
