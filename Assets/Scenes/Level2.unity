@@ -1275,9 +1275,10 @@ GameObject:
   m_Component:
   - component: {fileID: 324313921}
   - component: {fileID: 324313922}
+  - component: {fileID: 324313923}
   m_Layer: 0
   m_Name: TreeBigPink
-  m_TagString: Untagged
+  m_TagString: Kill
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1347,6 +1348,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &324313923
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324313920}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 49.192482, y: -2.113689}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 11.975, y: 17.925}
+    newSize: {x: 11.975, y: 17.925}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 123.595795, y: 13.697621}
+  m_EdgeRadius: 0
 --- !u!1 &328319015
 GameObject:
   m_ObjectHideFlags: 0
@@ -5907,8 +5934,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222908425}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.166714, y: -35.187855, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 56.2571, y: -35.187855, z: 0}
+  m_LocalScale: {x: 1.0151, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 808433289}
   m_RootOrder: 10
@@ -6118,7 +6145,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1237361269}
   - component: {fileID: 1237361270}
-  - component: {fileID: 1237361271}
   m_Layer: 0
   m_Name: TreeBigGreen
   m_TagString: Kill
@@ -6191,19 +6217,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &1237361271
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1237361268}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 113.507416, y: 15.509515, z: 0.2}
-  m_Center: {x: 41.070442, y: -1.2077422, z: 0}
 --- !u!1001 &1264791476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9364,6 +9377,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2030995040, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: cm
+      value: 
+      objectReference: {fileID: 1597965601}
     - target: {fileID: 159860801394381921, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_Name
       value: NewPlayer
@@ -9472,6 +9489,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 5406271486073113262, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: deathScene
+      value: Level2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 159860801815086649, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
     - {fileID: 159860801815086598, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
