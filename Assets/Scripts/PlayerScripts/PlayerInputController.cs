@@ -194,7 +194,7 @@ public class PlayerInputController : MonoBehaviour
         else if (amountOfJump <= 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, rb2D.velocity.y);
-           
+            audioScr.volume = 1;
         }
     }
 
@@ -236,7 +236,7 @@ public class PlayerInputController : MonoBehaviour
     }
     void PlayJumpAudio()
     {
-        
+        audioScr.volume = 0.5f;
         audioScr.pitch = Random.Range(pitchMin, pitchMax);
         audioScr.PlayOneShot(jumpingSound);
     }
