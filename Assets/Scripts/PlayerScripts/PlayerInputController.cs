@@ -217,6 +217,7 @@ public class PlayerInputController : MonoBehaviour
         
         if (audioScr.isPlaying && moveVector.x == 0 && isGrounded && _jumpSound == false )
         {
+            audioScr.volume = 1;
             audioScr.Stop();
         }
         else if(!audioScr.isPlaying && moveVector.x != 0 && isGrounded)
@@ -224,10 +225,12 @@ public class PlayerInputController : MonoBehaviour
             //audioScr.pitch = Random.Range(pitchMin, pitchMax);
             if(inHoney == true)
             {
+                audioScr.volume = 1;
                 audioScr.clip = honeySound;
             }
             else
             {
+                audioScr.volume = 1;
                 audioScr.clip = movementSound[movementIndex];
             }
             audioScr.Play();
