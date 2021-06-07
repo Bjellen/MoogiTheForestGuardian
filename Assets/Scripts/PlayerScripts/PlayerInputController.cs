@@ -85,7 +85,8 @@ public class PlayerInputController : MonoBehaviour
 
     private void Update()
     {
-        Movement();
+        if (health.knockBack == false)
+        { Movement(); } 
 
         if (IsGrounded())
         {
