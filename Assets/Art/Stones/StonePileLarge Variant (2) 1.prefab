@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!61 &22228103
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2940989010203334335}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.242275, y: 1.2768288}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 14.681816, y: 3.5536575}
+  m_EdgeRadius: 0
+--- !u!1001 &7656293410669845953
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 83.07552
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -63.662075
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1396313179928864248, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4796583909386914686, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_Name
+      value: StonePileLarge Variant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5554717788608880669, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+--- !u!1 &2940989010203334335 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4796583909386914686, guid: 965c4554b523ea34594eee5f7946f06c, type: 3}
+  m_PrefabInstance: {fileID: 7656293410669845953}
+  m_PrefabAsset: {fileID: 0}
