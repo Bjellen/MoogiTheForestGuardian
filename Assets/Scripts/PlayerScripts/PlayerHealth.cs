@@ -92,7 +92,6 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
-        playerHealth = 3;
         SceneManager.LoadScene(deathScene);
         Debug.Log("I am dead");
     }
