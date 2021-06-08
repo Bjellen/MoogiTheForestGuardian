@@ -23,9 +23,9 @@ public class Moving_Platform : MonoBehaviour
 
     private void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        playerCharacter = player.GetComponentInChildren<Transform>();
-        playerCollision = playerCharacter.GetComponentInChildren<Transform>();
+        player = FindObjectOfType<PlayerInputController>().transform.parent.gameObject;
+        //playerCharacter = player.GetComponentInChildren<Transform>();
+        //playerCollision = playerCharacter.GetComponentInChildren<Transform>();
         CloudTransform = GetComponent<Transform>();
     }
 
@@ -64,14 +64,14 @@ public class Moving_Platform : MonoBehaviour
 
         DebugText.text = "On cloud is " + onCloud;
 
-        if(playerCollision && onCloud == true)
-        {
-            OnCloud();
-        }
-        else
-        {
-            OffCloud();
-        }
+        //if(playerCollision && onCloud == true)
+        //{
+        //    OnCloud();
+        //}
+        //else
+        //{
+        //    OffCloud();
+        //}
 
     }
     IEnumerator Wait()
@@ -96,7 +96,7 @@ public class Moving_Platform : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            
+            player.transform.parent = transform;
             onCloud = true;
             
         }
@@ -106,7 +106,7 @@ public class Moving_Platform : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            playerCollision.transform.parent = null;
+            player.transform.parent = null;
             onCloud = false;
 
         }
