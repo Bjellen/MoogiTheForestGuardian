@@ -277,6 +277,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 65
       objectReference: {fileID: 0}
+    - target: {fileID: 1488320182014490578, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
+      propertyPath: m_BlockingMask.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1488320182014490579, guid: 9ee0f5df8d40e874bba24b8cd2b44bdc, type: 3}
       propertyPath: m_Name
       value: Health UI
