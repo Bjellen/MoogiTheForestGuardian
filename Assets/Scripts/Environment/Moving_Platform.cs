@@ -14,9 +14,13 @@ public class Moving_Platform : MonoBehaviour
 
     public Transform playerCollision;
 
+    public bool onCloud;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+
+        onCloud = false;
 
         leftRight[0] = false;
         leftRight[1] = true;
@@ -45,10 +49,30 @@ public class Moving_Platform : MonoBehaviour
             leftRight[0] = true;
             leftRight[1] = false;
         }
+
+        if(onCloud == true)
+        {
+            OnCloud();
+        }
+        else
+        {
+            OffCloud();
+        }
+
     }
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(delayTime);
+    }
+
+    void OnCloud()
+    {
+        playerCollision.transform.parent = transform;
+    }
+
+    void OffCloud()
+    {
+        playerCollision.transform.parent = player.transform;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -57,15 +81,14 @@ public class Moving_Platform : MonoBehaviour
 
         if (playerCollision != null)
         {
-            playerCollision.transform.parent = transform;
+            onCloud = true;
         }
+        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-
-        playerCollision.transform.parent = player.transform;
-
+        onCloud = false;
     }
 
 }
