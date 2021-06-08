@@ -7,6 +7,7 @@ public class Moving_Platform : MonoBehaviour
 {
     public Transform[] Points; //0 is A (to the left), 1 is B (to the right)
     public GameObject player;
+    public Transform playerCharacter;
 
     public bool[] leftRight;//Left is 0, right is 1
 
@@ -19,14 +20,20 @@ public class Moving_Platform : MonoBehaviour
 
     public Text DebugText;
 
-    private void Start()
+    private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        
-        onCloud = false;
+        playerCharacter = player.GetComponentInChildren<Transform>();
+        playerCollision = playerCharacter.GetComponentInChildren<Transform>();
+    }
 
+    private void Start()
+    {
         leftRight[0] = false;
         leftRight[1] = true;
+
+        onCloud = false;
+
     }
 
     private void Update()
@@ -78,7 +85,8 @@ public class Moving_Platform : MonoBehaviour
 
     void OffCloud()
     {
-        playerCollision.transform.parent = player.transform;
+        
+        playerCollision.transform.parent = playerCharacter.transform;
         
     }
 
@@ -86,7 +94,7 @@ public class Moving_Platform : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            playerCollision = collision.gameObject.GetComponentInChildren<Transform>();
+            
             onCloud = true;
             
         }
@@ -96,7 +104,7 @@ public class Moving_Platform : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            
+            playerCollision.transform.parent = null;
             onCloud = false;
 
         }
