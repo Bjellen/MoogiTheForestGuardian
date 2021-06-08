@@ -22,6 +22,7 @@ public class PlayerInputController : MonoBehaviour
     public float maxAmountOfJump;
 
     public int Collectables;
+    public int Kin;
 
     public Animator animatior;
 

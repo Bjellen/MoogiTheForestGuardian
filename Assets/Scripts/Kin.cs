@@ -2,21 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectables : MonoBehaviour
+public class Kin : MonoBehaviour
 {
-    private PlayAudioClip audio;
-    private void Awake()
-    {
-        audio = GameObject.FindGameObjectWithTag("CollectableAudio").GetComponent<PlayAudioClip>();
-    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         var player = other.GetComponent<PlayerInputController>();
         if (player != null)
         {
-            player.Collectables++;
-            
-            audio.PlayAudio();
+            KinsFound.kidFound++;
             Destroy(gameObject);
         }
     }

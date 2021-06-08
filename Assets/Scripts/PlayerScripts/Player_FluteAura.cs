@@ -18,6 +18,8 @@ public class Player_FluteAura : MonoBehaviour
     private MobileInput mobileInput;
     private bool isPlaying;
 
+    public AudioSource source;
+
 
     private void Awake()
     {
@@ -69,6 +71,10 @@ public class Player_FluteAura : MonoBehaviour
             growingFlower = null;
         }
         animator.SetBool("IsPlaying", isPlaying);
+        if (isPlaying && !source.isPlaying)
+        {
+            source.Play();
+        }
 
     }
 
