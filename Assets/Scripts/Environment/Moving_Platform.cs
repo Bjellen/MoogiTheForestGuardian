@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Moving_Platform : MonoBehaviour
 {
@@ -16,10 +17,12 @@ public class Moving_Platform : MonoBehaviour
 
     public bool onCloud;
 
+    public Text DebugText;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-
+        
         onCloud = false;
 
         leftRight[0] = false;
@@ -50,7 +53,9 @@ public class Moving_Platform : MonoBehaviour
             leftRight[1] = false;
         }
 
-        if(onCloud == true)
+        DebugText.text = "On cloud is " + onCloud;
+
+        if(playerCollision && onCloud == true)
         {
             OnCloud();
         }
@@ -68,27 +73,34 @@ public class Moving_Platform : MonoBehaviour
     void OnCloud()
     {
         playerCollision.transform.parent = transform;
+
     }
 
     void OffCloud()
     {
         playerCollision.transform.parent = player.transform;
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        playerCollision = collision.gameObject.GetComponent<Transform>();
-
-        if (playerCollision != null)
+        if (collision.gameObject.tag == "Player")
         {
+            playerCollision = collision.gameObject.GetComponentInChildren<Transform>();
             onCloud = true;
+            
         }
-        
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        onCloud = false;
+        if(collision.gameObject.tag == "Player")
+        {
+            
+            onCloud = false;
+
+        }
+        
     }
 
 }
