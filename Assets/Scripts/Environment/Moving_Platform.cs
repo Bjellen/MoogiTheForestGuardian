@@ -12,7 +12,7 @@ public class Moving_Platform : MonoBehaviour
     public float speed;
     public int delayTime;
 
-    public Rigidbody2D playerCollision;
+    public Transform playerCollision;
 
     private void Start()
     {
@@ -53,7 +53,7 @@ public class Moving_Platform : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        playerCollision = collision.gameObject.GetComponent<Rigidbody2D>();
+        playerCollision = collision.gameObject.GetComponent<Transform>();
 
         if (playerCollision != null)
         {
