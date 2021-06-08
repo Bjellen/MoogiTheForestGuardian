@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7745565685517476908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.61, z: 0}
-  m_LocalScale: {x: 1.4875, y: 1, z: 1}
+  m_LocalPosition: {x: 0.0577, y: -0.7058, z: 0.0001}
+  m_LocalScale: {x: 3.9106305, y: 1.1916, z: 1}
   m_Children: []
   m_Father: {fileID: 7745565686509192472}
   m_RootOrder: 1
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -194,8 +194,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9fdbc85ba79700a459b1af405cc97652, type: 2}
-  m_sharedMaterial: {fileID: -1550768730829470155, guid: 9fdbc85ba79700a459b1af405cc97652, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5cba9812aae4cc64693b23814813390e, type: 2}
+  m_sharedMaterial: {fileID: 1983004656693688380, guid: 5cba9812aae4cc64693b23814813390e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

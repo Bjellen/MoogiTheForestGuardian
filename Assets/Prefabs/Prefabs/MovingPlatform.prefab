@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205405630187783470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.030302048, y: 2.8506813, z: 398.24396}
+  m_LocalPosition: {x: -0.030302048, y: 2.8506813, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 205405630618716307}
@@ -101,9 +101,14 @@ MonoBehaviour:
   - {fileID: 205405630966196185}
   - {fileID: 205405630582950144}
   player: {fileID: 0}
+  playerCharacter: {fileID: 0}
   leftRight: 0000
   speed: 2
   delayTime: 5
+  playerCollision: {fileID: 0}
+  CloudTransform: {fileID: 0}
+  onCloud: 0
+  DebugText: {fileID: 0}
 --- !u!61 &205405630187783465
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -173,7 +178,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205405630582950145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.580302, y: 2.7706795, z: 1.7771606}
+  m_LocalPosition: {x: -12.580302, y: 2.7706795, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 205405630618716307}
@@ -236,7 +241,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205405630966196190}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.879698, y: 2.9906807, z: 1.8893738}
+  m_LocalPosition: {x: 11.879698, y: 2.9906807, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 205405630618716307}
