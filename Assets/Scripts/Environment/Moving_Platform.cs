@@ -15,6 +15,7 @@ public class Moving_Platform : MonoBehaviour
     public int delayTime;
 
     public Transform playerCollision;
+    public Transform CloudTransform;
 
     public bool onCloud;
 
@@ -25,6 +26,7 @@ public class Moving_Platform : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerCharacter = player.GetComponentInChildren<Transform>();
         playerCollision = playerCharacter.GetComponentInChildren<Transform>();
+        CloudTransform = GetComponent<Transform>();
     }
 
     private void Start()
@@ -79,7 +81,7 @@ public class Moving_Platform : MonoBehaviour
 
     void OnCloud()
     {
-        playerCollision.transform.parent = transform;
+        playerCollision.transform.parent = CloudTransform;
 
     }
 
