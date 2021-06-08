@@ -14,7 +14,7 @@ public class UI_InputCommunicator : MonoBehaviour
 
     void OnPause()
     {
-        print("I DID IT :DD ");
+        //print("I DID IT :DD ");
         if (pauseMenu.gameIsPaused == false)
         {
             pauseMenu.gameIsPaused = true;

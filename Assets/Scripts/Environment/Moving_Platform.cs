@@ -12,6 +12,8 @@ public class Moving_Platform : MonoBehaviour
     public float speed;
     public int delayTime;
 
+    public Rigidbody2D playerCollision;
+
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -51,7 +53,7 @@ public class Moving_Platform : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var playerCollision = collision.gameObject.GetComponent<Rigidbody2D>();
+        playerCollision = collision.gameObject.GetComponent<Rigidbody2D>();
 
         if (playerCollision != null)
         {
@@ -61,12 +63,9 @@ public class Moving_Platform : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        var playerCollision = collision.gameObject.GetComponent<Rigidbody2D>();
 
-        if (playerCollision != null)
-        {
-            playerCollision.transform.parent = player.transform;
-        }
+        playerCollision.transform.parent = player.transform;
+
     }
 
 }
