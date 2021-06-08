@@ -62,7 +62,7 @@ public class Moving_Platform : MonoBehaviour
             leftRight[1] = false;
         }
 
-        DebugText.text = "On cloud is " + onCloud;
+        //DebugText.text = "On cloud is " + onCloud;
 
         //if(playerCollision && onCloud == true)
         //{
