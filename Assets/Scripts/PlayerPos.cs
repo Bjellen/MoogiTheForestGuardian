@@ -7,9 +7,15 @@ public class PlayerPos : MonoBehaviour
 {
     public CheckMaster cm;
 
-    void Start()
+    public Vector2 playerPos;
+
+    private void Awake()
     {
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckMaster>();
-        transform.position = cm.lastCheckPointPos;
+        playerPos = cm.lastCheckPointPos;
+    }
+    void Start()
+    {
+        transform.position = playerPos;
     }
 }
