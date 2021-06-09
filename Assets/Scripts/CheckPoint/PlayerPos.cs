@@ -7,7 +7,7 @@ public class PlayerPos : MonoBehaviour
 {
     public CheckMaster cm;
 
-    public Vector2 playerPos;
+
 
     private void Awake()
     {
@@ -16,7 +16,7 @@ public class PlayerPos : MonoBehaviour
     }
     void Start()
     {
-        playerPos = cm.lastCheckPointPos[cm.checkPointIndex].transform.position;
-        transform.position = playerPos;
+       
+        transform.position = cm.lastCheckPointPos[cm.checkPointIndex].transform.position;
     }
 }
