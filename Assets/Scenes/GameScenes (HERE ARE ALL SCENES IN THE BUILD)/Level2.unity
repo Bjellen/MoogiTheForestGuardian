@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9065358255589927200, guid: f7003c84156b8a2439525aabd29a1371, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.58
+      value: 14.6
       objectReference: {fileID: 0}
     - target: {fileID: 9065358255589927200, guid: f7003c84156b8a2439525aabd29a1371, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1178,7 +1178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205405630582950144, guid: c12795199978d8f458511f6944b76fd4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.26
+      value: -7.02
       objectReference: {fileID: 0}
     - target: {fileID: 205405630582950144, guid: c12795199978d8f458511f6944b76fd4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1202,11 +1202,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 205405630618716307, guid: c12795199978d8f458511f6944b76fd4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.67
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 205405630618716307, guid: c12795199978d8f458511f6944b76fd4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -11.99
+      value: -12.32
       objectReference: {fileID: 0}
     - target: {fileID: 205405630618716307, guid: c12795199978d8f458511f6944b76fd4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1335,6 +1335,10 @@ PrefabInstance:
     - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_Name
       value: Bouncy platform (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4272464056620709094, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_RootOrder
@@ -2825,6 +2829,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bouncy platform (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4272464056620709094, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3632,6 +3640,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bouncy platform (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4272464056620709094, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4043,6 +4055,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bouncy platform
       objectReference: {fileID: 0}
+    - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4272464056620709094, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -4387,6 +4403,14 @@ PrefabInstance:
     - target: {fileID: 402985105875433926, guid: 788811e792a3af743ae160f4236963bb, type: 3}
       propertyPath: maxScale.y
       value: 2.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 402985105875433927, guid: 788811e792a3af743ae160f4236963bb, type: 3}
+      propertyPath: m_Size.y
+      value: 6.3749065
+      objectReference: {fileID: 0}
+    - target: {fileID: 402985105875433927, guid: 788811e792a3af743ae160f4236963bb, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.037546635
       objectReference: {fileID: 0}
     - target: {fileID: 402985106546108290, guid: 788811e792a3af743ae160f4236963bb, type: 3}
       propertyPath: m_RootOrder
@@ -5930,6 +5954,14 @@ PrefabInstance:
       propertyPath: maxScale.y
       value: 2.37
       objectReference: {fileID: 0}
+    - target: {fileID: 402985105875433927, guid: 788811e792a3af743ae160f4236963bb, type: 3}
+      propertyPath: m_Size.y
+      value: 6.3730335
+      objectReference: {fileID: 0}
+    - target: {fileID: 402985105875433927, guid: 788811e792a3af743ae160f4236963bb, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.038483024
+      objectReference: {fileID: 0}
     - target: {fileID: 402985106546108290, guid: 788811e792a3af743ae160f4236963bb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -6298,6 +6330,10 @@ PrefabInstance:
     - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_Name
       value: Bouncy platform (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4272464056620709094, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_RootOrder
@@ -7493,6 +7529,14 @@ PrefabInstance:
       propertyPath: minScale.y
       value: -2.76
       objectReference: {fileID: 0}
+    - target: {fileID: 402985105875433927, guid: 788811e792a3af743ae160f4236963bb, type: 3}
+      propertyPath: m_Size.y
+      value: 6.4082613
+      objectReference: {fileID: 0}
+    - target: {fileID: 402985105875433927, guid: 788811e792a3af743ae160f4236963bb, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.020869374
+      objectReference: {fileID: 0}
     - target: {fileID: 402985106546108290, guid: 788811e792a3af743ae160f4236963bb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7591,6 +7635,10 @@ PrefabInstance:
     - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_Name
       value: Bouncy platform (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4272464056620709094, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_RootOrder
@@ -8744,6 +8792,10 @@ PrefabInstance:
     - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_Name
       value: Bouncy platform (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272464056620709085, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4272464056620709094, guid: 5f41096c60655da4abc08954ec19bb04, type: 3}
       propertyPath: m_RootOrder
@@ -9996,6 +10048,10 @@ PrefabInstance:
     - target: {fileID: 205405630187783465, guid: c12795199978d8f458511f6944b76fd4, type: 3}
       propertyPath: m_Offset.y
       value: -0.15296459
+      objectReference: {fileID: 0}
+    - target: {fileID: 205405630187783466, guid: c12795199978d8f458511f6944b76fd4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.92
       objectReference: {fileID: 0}
     - target: {fileID: 205405630187783466, guid: c12795199978d8f458511f6944b76fd4, type: 3}
       propertyPath: m_LocalPosition.z
