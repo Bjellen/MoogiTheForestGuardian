@@ -39,8 +39,6 @@ public class PlayerHealth : MonoBehaviour
         if (GameObject.FindGameObjectsWithTag("Boss").Length != 0)
         { boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Boss_Chase>(); }
 
-
-
         PlayerRB = GetComponent<Rigidbody2D>();
         playerHealth = 3;
         PlayerTransform = GetComponent<Transform>();
@@ -75,7 +73,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (collision.gameObject.CompareTag(bossTag))
         {
-            Die();
+            BossDie();
         }
     }
 
@@ -102,12 +100,17 @@ public class PlayerHealth : MonoBehaviour
 
     void Die()
     {
+        
         transform.position = cm.lastCheckPointPos[cm.checkPointIndex].transform.position;
 
-        if (boss != null)
-        { boss.gameObject.transform.position = boss.spawnPoint.position; }
-
         playerHealth = 3;
+
+    }
+
+    void BossDie()
+    {
+        SceneManager.LoadScene(deathScene);
+
     }
 
     IEnumerator Wait()
