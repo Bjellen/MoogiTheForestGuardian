@@ -2483,7 +2483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1120061424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2582,7 +2582,7 @@ MonoBehaviour:
   level2: Level2
   level3: Level3
   level4: Level4
-  bossLevel: BOSS
+  bossLevel: BOSS02
   MainMenuPanel: {fileID: 1394802617}
   LevelselectPanel: {fileID: 2143603368}
 --- !u!114 &1120061429
@@ -4633,7 +4633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2143603369
 RectTransform:
   m_ObjectHideFlags: 0
