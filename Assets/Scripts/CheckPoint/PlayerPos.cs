@@ -16,7 +16,7 @@ public class PlayerPos : MonoBehaviour
     }
     void Start()
     {
-
-        transform.position = new Vector2(-138, -6);
+       
+        transform.position = cm.lastCheckPointPos[cm.checkPointIndex].transform.position;
     }
 }
