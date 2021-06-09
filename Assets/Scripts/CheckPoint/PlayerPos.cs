@@ -12,10 +12,11 @@ public class PlayerPos : MonoBehaviour
     private void Awake()
     {
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckMaster>();
-        playerPos = cm.lastCheckPointPos;
+        
     }
     void Start()
     {
+        playerPos = cm.lastCheckPointPos[cm.checkPointIndex].transform.position;
         transform.position = playerPos;
     }
 }

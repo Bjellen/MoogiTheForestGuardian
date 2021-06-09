@@ -5,14 +5,17 @@ using UnityEngine;
 public class CheckMaster : MonoBehaviour
 {
     private static CheckMaster instance;
-    public Vector2 lastCheckPointPos;
+    public GameObject[] lastCheckPointPos;
+    public int checkPointIndex;
 
     private void Awake()
     {
+        
         if (instance == null)
         {
+            lastCheckPointPos = GameObject.FindGameObjectsWithTag("SpawnPoint");
             instance = this;
-            //DontDestroyOnLoad(instance);
+            DontDestroyOnLoad(instance);
         }
         else
         {

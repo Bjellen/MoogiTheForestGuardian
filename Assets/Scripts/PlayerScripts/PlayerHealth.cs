@@ -26,10 +26,16 @@ public class PlayerHealth : MonoBehaviour
     public string deathScene;
 
     [Header("Spawnpoints")]
-    public Transform spawnPoint;
+    public CheckMaster cm;
+
+    [Header("Boss")]
+    public Boss_Chase boss;
 
     private void Start()
     {
+        cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckMaster>();
+        boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Boss_Chase>();
+
         PlayerRB = GetComponent<Rigidbody2D>();
         playerHealth = 3;
         PlayerTransform = GetComponent<Transform>();
@@ -85,15 +91,18 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.Log("I have died");
             knockBack = false;
-            //PlayerTransform.position = spawnPoint.transform.position;
             Die();
         }
     }
 
     void Die()
     {
-        SceneManager.LoadScene(deathScene);
-        Debug.Log("I am dead");
+        transform.position = cm.lastCheckPointPos[cm.checkPointIndex].transform.position;
+
+        if (boss != null)
+        { boss.gameObject.transform.position = boss.spawnPoint.position; }
+
+        playerHealth = 3;
     }
 
     IEnumerator Wait()
