@@ -14,6 +14,7 @@ public class CheckMaster : MonoBehaviour
         if (instance == null)
         {
             lastCheckPointPos = GameObject.FindGameObjectsWithTag("SpawnPoint");
+            checkPointIndex = 0;
             instance = this;
             DontDestroyOnLoad(instance);
         }

@@ -34,7 +34,12 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         cm = GameObject.FindGameObjectWithTag("CM").GetComponent<CheckMaster>();
-        boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Boss_Chase>();
+
+        //If no Boss, boss is null
+        if (GameObject.FindGameObjectsWithTag("Boss").Length != 0)
+        { boss = GameObject.FindGameObjectWithTag("Boss").GetComponent<Boss_Chase>(); }
+
+
 
         PlayerRB = GetComponent<Rigidbody2D>();
         playerHealth = 3;
