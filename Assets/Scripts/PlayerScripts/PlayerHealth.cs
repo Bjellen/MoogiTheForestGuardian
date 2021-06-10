@@ -105,6 +105,11 @@ public class PlayerHealth : MonoBehaviour
 
         playerHealth = 3;
 
+        if(boss != null)
+        {
+            SceneManager.LoadScene(deathScene);
+        }
+
     }
 
     void BossDie()
