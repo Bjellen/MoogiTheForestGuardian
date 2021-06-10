@@ -14,7 +14,7 @@ public class CutScene : MonoBehaviour
     IEnumerator playVideo()
     {
         yield return new WaitForSeconds(timer);
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CutScene6"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CutScene7"))
         {
             SceneManager.LoadScene("MainMenu");
             
