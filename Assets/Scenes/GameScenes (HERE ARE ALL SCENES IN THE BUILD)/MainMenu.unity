@@ -1330,7 +1330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad37609120d27254c8691b82702426f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firstLevel: HouseMoogi
+  firstLevel: CutScene1
   currentLevel: 
   MainMenuPanel: {fileID: 1394802617}
   LevelselectPanel: {fileID: 2143603368}
@@ -2577,12 +2577,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6d214697ff240e41a619d25ee1d0263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  houselevel: HouseMoogi
+  houselevel: CutScene1
   level1: Level1
-  level2: Level2
-  level3: Level3
-  level4: Level4
-  bossLevel: BOSS02
+  level2: CutScene2
+  level3: CutScene3
+  level4: CutScene4
+  bossLevel: CutScene5
   MainMenuPanel: {fileID: 1394802617}
   LevelselectPanel: {fileID: 2143603368}
 --- !u!114 &1120061429
