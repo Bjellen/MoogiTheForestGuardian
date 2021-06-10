@@ -1,18 +1,40 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CutScene : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int timer;
+    
+    private void Start()
     {
-        
+        StartCoroutine(playVideo());
     }
-
-    // Update is called once per frame
-    void Update()
+    IEnumerator playVideo()
     {
-        
+        yield return new WaitForSeconds(timer);
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CutScene6"))
+        {
+            SceneManager.LoadScene("MainMenu");
+            
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+    }
+    public void skipButton()
+    {
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CutScene7"))
+        {
+            SceneManager.LoadScene("MainMenu");
+
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 }
