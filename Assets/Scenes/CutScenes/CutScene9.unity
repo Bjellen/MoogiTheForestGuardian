@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 599212814}
   - component: {fileID: 599212813}
   m_Layer: 0
-  m_Name: CutScene7
+  m_Name: CutScene9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 599212812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8f6f4880e9c9c34a9dbf9a25ec3eb4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f6b256e4ed136946ac5ea6938e5cdcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 66
@@ -229,7 +229,7 @@ PrefabInstance:
     - target: {fileID: 1313673092546312543, guid: 588e4f81371450348b18f293526ee0c6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 599212813}
+      objectReference: {fileID: 0}
     - target: {fileID: 1313673093576924947, guid: 588e4f81371450348b18f293526ee0c6, type: 3}
       propertyPath: m_Pivot.x
       value: 0
