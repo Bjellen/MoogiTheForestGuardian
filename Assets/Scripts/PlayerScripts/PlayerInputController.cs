@@ -13,7 +13,7 @@ public class PlayerInputController : MonoBehaviour
 
     public SpriteRenderer sprite;
 
-    private Collider2D myCollider;
+    public Collider2D myCollider;
     public Collider2D interactCollider;
 
     public float moveSpeed;
@@ -254,6 +254,7 @@ public class PlayerInputController : MonoBehaviour
         var _position = transform.position;
         var _direction = -Vector2.up;
         float _distance = 2.2f;
+        onPlatform = false;
 
         var hit = Physics2D.Raycast(_position, _direction, _distance, whatIsGround);
         Debug.DrawRay(_position, _direction * _distance, Color.green);
@@ -296,12 +297,9 @@ public class PlayerInputController : MonoBehaviour
             
         }
 
-        if(collision.gameObject.tag == "Platform")
-        {
-            onPlatform = false;
-            
-        }
+        
     }
+
     #endregion
 
     #region Flip functions
@@ -320,4 +318,5 @@ public class PlayerInputController : MonoBehaviour
     {
         dust.Play();
     }
+
 }
