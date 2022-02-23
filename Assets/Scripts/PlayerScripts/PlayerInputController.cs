@@ -272,6 +272,10 @@ public class PlayerInputController : MonoBehaviour
             interactCollider = collision.gameObject.GetComponent<Collider2D>();
             onPlatform = true;
         }
+        else
+        {
+            interactCollider = null;
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -280,6 +284,7 @@ public class PlayerInputController : MonoBehaviour
         {
             interactCollider = collision.gameObject.GetComponent<Collider2D>();
         }
+        
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -293,11 +298,14 @@ public class PlayerInputController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Honey")
         {
-            inHoney = false;
-            
+            inHoney = false;   
         }
-
         
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        interactCollider = null;
     }
 
     #endregion
