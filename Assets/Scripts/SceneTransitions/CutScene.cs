@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class CutScene : MonoBehaviour
 {
     public int timer;
+    public string lastCutsceneName;
     
     private void Start()
     {
@@ -14,7 +15,7 @@ public class CutScene : MonoBehaviour
     IEnumerator playVideo()
     {
         yield return new WaitForSeconds(timer);
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CutScene9"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName(lastCutsceneName))
         {
             SceneManager.LoadScene("MainMenu");
             
@@ -27,7 +28,7 @@ public class CutScene : MonoBehaviour
     }
     public void skipButton()
     {
-        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("CutScene7"))
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName(lastCutsceneName))
         {
             SceneManager.LoadScene("MainMenu");
 

@@ -111,7 +111,6 @@ public class PlayerInputController : MonoBehaviour
         if (interactCollider && transform.position.y < interactCollider.transform.position.y && onPlatform == false)
         {
             Physics2D.IgnoreCollision(interactCollider, myCollider, false);
-            interactCollider = null;
         }
 
         if (moveVector.x < -0.5)
@@ -254,7 +253,6 @@ public class PlayerInputController : MonoBehaviour
         var _position = transform.position;
         var _direction = -Vector2.up;
         float _distance = 2.2f;
-        onPlatform = false;
 
         var hit = Physics2D.Raycast(_position, _direction, _distance, whatIsGround);
         Debug.DrawRay(_position, _direction * _distance, Color.green);
@@ -271,10 +269,6 @@ public class PlayerInputController : MonoBehaviour
         {
             interactCollider = collision.gameObject.GetComponent<Collider2D>();
             onPlatform = true;
-        }
-        else
-        {
-            interactCollider = null;
         }
     }
 
@@ -305,7 +299,7 @@ public class PlayerInputController : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        interactCollider = null;
+        onPlatform = false;
     }
 
     #endregion
