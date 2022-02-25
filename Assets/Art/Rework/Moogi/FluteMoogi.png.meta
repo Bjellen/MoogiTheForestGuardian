@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 80ca453a6ccf92d40b4da55b8770c60e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4526843556598397956
+    second: FluteMoogi_0
+  - first:
+      213: 6299834407074606690
+    second: FluteMoogi_1
+  - first:
+      213: 5175000277502248586
+    second: FluteMoogi_2
+  - first:
+      213: 6778694057736452761
+    second: FluteMoogi_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +53,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,7 +125,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FluteMoogi_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf3cf2ff4cb6d21c0800000000000000
+      internalID: -4526843556598397956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluteMoogi_1
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 0
+        width: 48
+        height: 82
+      alignment: 9
+      pivot: {x: 0.47767878, y: 0.5014518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e2779e3028d6750800000000000000
+      internalID: 6299834407074606690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluteMoogi_2
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86c115855b41d740800000000000000
+      internalID: 5175000277502248586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FluteMoogi_3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 0
+        width: 50
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99abe689452c21e50800000000000000
+      internalID: 6778694057736452761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
