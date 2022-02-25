@@ -27,10 +27,12 @@ public class Enemy_Walk : MonoBehaviour
         if (leftRight[0])
         {
             transform.position = Vector2.MoveTowards(transform.position, points[0].position, moveSpeed * Time.deltaTime);
+            print("i'm moving");
         }
         else if (leftRight[1])
         {
             transform.position = Vector2.MoveTowards(transform.position, points[1].position, moveSpeed * Time.deltaTime);
+            print("I'm moving back");
         }
 
         if(Vector2.Distance(points[0].position,transform.position) < 0.001)
