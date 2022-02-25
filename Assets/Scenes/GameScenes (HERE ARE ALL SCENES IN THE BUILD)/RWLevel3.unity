@@ -6844,7 +6844,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333753924}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.62997, y: -22.530003, z: -10}
+  m_LocalPosition: {x: -31.24479, y: -22.530003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -35382,6 +35382,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7745565685517477328, guid: 217f995ae516d534ebd060adab010585, type: 3}
+      propertyPath: m_SortingLayer
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745565685517477328, guid: 217f995ae516d534ebd060adab010585, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1724627665
+      objectReference: {fileID: 0}
     - target: {fileID: 7745565685517477330, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: textLine
       value: 'Wow, this honey is so sweet and sticky! Seems like the bees like it
@@ -35439,6 +35447,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7745565686505035981, guid: 217f995ae516d534ebd060adab010585, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1724627665
+      objectReference: {fileID: 0}
     - target: {fileID: 7745565686509192472, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -35488,8 +35500,16 @@ PrefabInstance:
       value: NPC
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686509192475, guid: 217f995ae516d534ebd060adab010585, type: 3}
+      propertyPath: m_SortingLayer
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745565686509192475, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745565686509192475, guid: 217f995ae516d534ebd060adab010585, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1724627665
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686739341956, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_AnchoredPosition.x
