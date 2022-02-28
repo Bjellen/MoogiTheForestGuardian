@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class UI_MainMenu1 : MonoBehaviour
 {
-    public string firstLevel;
+    public string RWLevel1;
     public string currentLevel;
 
     public GameObject MainMenuPanel;
@@ -15,7 +15,7 @@ public class UI_MainMenu1 : MonoBehaviour
     public void NewGame()
     {
         //reset saves
-        SceneManager.LoadScene(firstLevel);
+        SceneManager.LoadScene(RWLevel1);
         print("Loading first level");
     }
 
