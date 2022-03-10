@@ -20,6 +20,8 @@ public class Player_FluteAura : MonoBehaviour
 
     public AudioSource source;
 
+    public int waitTime;
+
 
     private void Awake()
     {
@@ -40,7 +42,7 @@ public class Player_FluteAura : MonoBehaviour
     private void Start()
     {
         mobileInput.Mobile.FlutePlay.started += _ => isPlaying = true;
-        mobileInput.Mobile.FlutePlay.canceled += _ => isPlaying = false;
+        //mobileInput.Mobile.FlutePlay.canceled += _ => isPlaying = false;
     }
     void OnFlutePlay()
     {
@@ -76,7 +78,7 @@ public class Player_FluteAura : MonoBehaviour
             source.Play();
         }
 
-        if (isPlaying == true){ print("I'm playing"); } else if (isPlaying == false){ print("I'm playing"); }
+        if (isPlaying == true){ StartCoroutine(Wait()); } 
 
     }
 
@@ -86,6 +88,11 @@ public class Player_FluteAura : MonoBehaviour
         {
             growingFlower.isGrowing = false;
         }
+    }
+    IEnumerator Wait()
+    {
+        yield return new WaitForSecondsRealtime(waitTime);
+        isPlaying = false;
     }
 
     //private void OnDrawGizmos()
