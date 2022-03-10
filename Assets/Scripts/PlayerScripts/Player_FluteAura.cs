@@ -16,7 +16,7 @@ public class Player_FluteAura : MonoBehaviour
     public Animator animator;
 
     private MobileInput mobileInput;
-    private bool isPlaying;
+    public bool isPlaying;
 
     public AudioSource source;
 
@@ -75,6 +75,8 @@ public class Player_FluteAura : MonoBehaviour
         {
             source.Play();
         }
+
+        if (isPlaying == true){ print("I'm playing"); } else if (isPlaying == false){ print("I'm playing"); }
 
     }
 

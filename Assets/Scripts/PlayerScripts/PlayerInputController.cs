@@ -52,7 +52,9 @@ public class PlayerInputController : MonoBehaviour
     [Header("HoneyMovement")]
     public bool inHoney;
 
+    [Header("Scripts Connected")]
     private PlayerHealth health;
+    private Player_FluteAura flute;
 
     private void Awake()
     {
@@ -61,11 +63,13 @@ public class PlayerInputController : MonoBehaviour
 
     private void Start()
     {
+
         rb2D = GetComponent<Rigidbody2D>();
         myCollider = GetComponent<Collider2D>();
         sprite = GetComponent<SpriteRenderer>();
 
         health = GetComponent<PlayerHealth>();
+        flute = GetComponent<Player_FluteAura>();
 
         audioScr.clip = movementSound[movementIndex];
 
@@ -86,8 +90,14 @@ public class PlayerInputController : MonoBehaviour
 
     private void Update()
     {
-        if (health.knockBack == false)
-        { Movement(); } 
+        if (health.knockBack == false && flute.isPlaying == false)
+        {
+            Movement();
+        }
+        else
+        {
+            moveVector = new Vector2 (0,0);
+        }
 
         if (IsGrounded())
         {
