@@ -7,7 +7,7 @@ public class UI_LevelSelect : MonoBehaviour
 {
     //public string houselevel;
     public string RWLevel1;
-    public string RWLevel3;
+    public string RWLevel3New;
     public string RWLevel2;
     //Mia la inn denne, bare slett hvis det du vil:
     public string RWLevel4;
@@ -27,7 +27,7 @@ public class UI_LevelSelect : MonoBehaviour
 
     public void Level3()
     {
-        SceneManager.LoadScene(RWLevel3);
+        SceneManager.LoadScene(RWLevel3New);
     }
 
     public void Level2()
