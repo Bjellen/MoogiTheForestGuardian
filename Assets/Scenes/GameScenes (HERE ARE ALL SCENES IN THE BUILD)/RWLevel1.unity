@@ -230,7 +230,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7982435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.46, y: -1.47, z: 0}
+  m_LocalPosition: {x: 56.46, y: -1.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 95701329}
@@ -689,7 +689,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5160258218786963979, guid: 1e8198e58724b1b47acf192ab211f23d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 216.4
+      value: 66.6
       objectReference: {fileID: 0}
     - target: {fileID: 5160258218786963979, guid: 1e8198e58724b1b47acf192ab211f23d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -725,7 +725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5160258220245458518, guid: 1e8198e58724b1b47acf192ab211f23d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 66.6
+      value: 216.4
       objectReference: {fileID: 0}
     - target: {fileID: 5160258220245458518, guid: 1e8198e58724b1b47acf192ab211f23d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -799,6 +799,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GUI-Master
       objectReference: {fileID: 0}
+    - target: {fileID: 5160258220896000811, guid: 1e8198e58724b1b47acf192ab211f23d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6503476238479439032, guid: 1e8198e58724b1b47acf192ab211f23d, type: 3}
       propertyPath: m_ScreenMatchMode
       value: 0
@@ -822,20 +826,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7745565685517477330, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: textLine
-      value: 'That snail looks slimey. Try using that bouncy mushroom to get over
-        it! '
+      value: Sometimes you need to go higher.Try using that bouncy mushroom.
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.w
-      value: 65.19697
+      value: 68.626236
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
+      propertyPath: m_margin.x
+      value: -4.183662
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.y
-      value: -6.691792
+      value: 0.8526071
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.z
-      value: -21.194588
+      value: -17.940588
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_fontColor.b
@@ -1480,7 +1487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 402985106546108290, guid: 788811e792a3af743ae160f4236963bb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.491
+      value: -4.55
       objectReference: {fileID: 0}
     - target: {fileID: 402985106546108290, guid: 788811e792a3af743ae160f4236963bb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12483,7 +12490,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2376691538424899297, guid: 694d52b5de4de4947b87621d0bd4411e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.59
+      value: -1.25
       objectReference: {fileID: 0}
     - target: {fileID: 2376691538424899297, guid: 694d52b5de4de4947b87621d0bd4411e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12517,6 +12524,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2903165446483792649, guid: 694d52b5de4de4947b87621d0bd4411e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7252073867116909430, guid: 8b6f3d0f7377b7b45ae5b1c3321e3bf8, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 694d52b5de4de4947b87621d0bd4411e, type: 3}
 --- !u!1 &291557458
@@ -23780,8 +23791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7745565685517477330, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: textLine
-      value: Hey Moogi! You use A and D on your keyboard to walk and SPACE to jump.
-        Try it out!
+      value: You use A and D on your keyboard to walk and SPACE to jump. Try it out!
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_text
@@ -23793,11 +23803,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.w
-      value: 54.38144
+      value: 69.87417
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.x
-      value: -14.931889
+      value: -23.857895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
+      propertyPath: m_margin.y
+      value: 7.74632
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.z
@@ -49653,6 +49667,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &819940779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 819940781}
+  - component: {fileID: 819940780}
+  m_Layer: 0
+  m_Name: Levelstop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &819940780
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819940779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.05882263, y: -1.2622578}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1176453, y: 13.328787}
+  m_EdgeRadius: 0
+--- !u!4 &819940781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819940779}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -75.4, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821389695
 GameObject:
   m_ObjectHideFlags: 0
@@ -61036,7 +61107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104690618}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.92, y: -0.05, z: 0}
+  m_LocalPosition: {x: -38.92, y: -3.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 95701329}
@@ -78474,6 +78545,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NewPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 159860801394381921, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 159860801394381934, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -90908,19 +90983,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7745565685517477330, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: textLine
-      value: That Bee-ody guard looks scary... Play him a tune!
+      value: That Business-Bird looks angry... Play him a calming tune!
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.w
-      value: 71.06949
+      value: 65.76236
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.x
-      value: 1.0634192
+      value: -4.7818933
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.y
-      value: 13.702498
+      value: 8.395383
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231744, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_margin.z
@@ -90944,11 +91019,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231750, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.000029087
+      value: -3.2
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686181231750, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -22.2
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686294343056, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_RaycastTarget
