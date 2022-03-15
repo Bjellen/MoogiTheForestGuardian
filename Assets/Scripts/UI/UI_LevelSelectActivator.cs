@@ -12,7 +12,7 @@ public class UI_LevelSelectActivator : MonoBehaviour
     {
         saveSystem = GameObject.FindGameObjectWithTag("SaveSystem").GetComponent<SaveSystem>();
         Levels[0].SetActive(false);
-        Levels[1].SetActive(false);
+        //Levels[1].SetActive(false);
         Levels[3].SetActive(false);
         Levels[2].SetActive(false);
         Levels[4].SetActive(false);
