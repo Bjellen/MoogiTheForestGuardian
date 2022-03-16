@@ -45,6 +45,7 @@ public class PlayerInputController : MonoBehaviour
     [Header("GroundChecks")]
     public LayerMask whatIsGround;
     public bool isGrounded;
+    
 
     [Header("LadderMovement")]
     public bool isClimbing;
@@ -60,6 +61,7 @@ public class PlayerInputController : MonoBehaviour
     private PlayerHealth health;
     private Player_FluteAura flute;
 
+    
     private void Awake()
     {
         audioScr = GetComponent<AudioSource>();
@@ -114,7 +116,10 @@ public class PlayerInputController : MonoBehaviour
             isGrounded = true;
         }
         else
-        { isGrounded = false; }
+        { 
+            isGrounded = false;
+            flute.canPlay = false;
+        }
 
         if (amountOfJump > maxAmountOfJump)
         { amountOfJump = maxAmountOfJump; }
@@ -154,6 +159,7 @@ public class PlayerInputController : MonoBehaviour
         {
             Climb();
             rb2D.gravityScale = 0;
+            flute.canPlay = false;
         }
         else
         {
@@ -206,6 +212,7 @@ public class PlayerInputController : MonoBehaviour
             amountOfJump = 0;
             _jumpSound = true;
             PlayJumpAudio();
+            flute.canPlay = false;
         }
 
         else if (amountOfJump <= 0)
@@ -292,6 +299,7 @@ public class PlayerInputController : MonoBehaviour
         var _position = transform.position;
         var _direction = -Vector2.up;
         float _distance = 2.2f;
+        flute.canPlay = true;
 
         var hit = Physics2D.Raycast(_position, _direction, _distance, whatIsGround);
         Debug.DrawRay(_position, _direction * _distance, Color.green);

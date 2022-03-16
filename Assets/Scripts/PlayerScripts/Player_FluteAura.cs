@@ -22,6 +22,7 @@ public class Player_FluteAura : MonoBehaviour
 
     public int waitTime;
 
+    public bool canPlay;
 
     private void Awake()
     {
@@ -40,21 +41,25 @@ public class Player_FluteAura : MonoBehaviour
     }
 
     private void Start()
-    {
-        mobileInput.Mobile.FlutePlay.started += _ => isPlaying = true;
+    {   //mobileInput.Mobile.FlutePlay.started += _ => isPlaying = true; 
         //mobileInput.Mobile.FlutePlay.canceled += _ => isPlaying = false;
     }
     void OnFlutePlay()
     {
-        if (enemyCollision != null)
+        if (canPlay == true)
         {
-            enemyCollision.tag = "Friend";
-        }
+            if (enemyCollision != null)
+            {
+                enemyCollision.tag = "Friend";
+            }
 
-        if (plantCollision != null)
-        {
-            growingFlower.isGrowing = true;
+            if (plantCollision != null)
+            {
+                growingFlower.isGrowing = true;
+            }
+            isPlaying = true;
         }
+        
 
     }
 
@@ -75,12 +80,17 @@ public class Player_FluteAura : MonoBehaviour
 
         animator.SetBool("IsPlaying", isPlaying);
 
-        if (isPlaying && !source.isPlaying)
+        if (canPlay == true)
         {
-            source.Play();
+            if (isPlaying && !source.isPlaying)
+            {
+                if (isPlaying == true) 
+                {
+                    source.Play();
+                    StartCoroutine(Wait()); 
+                }
+            }
         }
-
-        if (isPlaying == true){ StartCoroutine(Wait()); } 
 
     }
 
@@ -91,9 +101,12 @@ public class Player_FluteAura : MonoBehaviour
             growingFlower.isGrowing = false;
         }
     }
+
     IEnumerator Wait()
     {
+        canPlay = false;
         yield return new WaitForSecondsRealtime(waitTime);
+        canPlay = true;
         isPlaying = false;
     }
 
