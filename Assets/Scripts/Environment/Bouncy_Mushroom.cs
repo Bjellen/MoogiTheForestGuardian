@@ -13,7 +13,11 @@ public class Bouncy_Mushroom : MonoBehaviour
         {
             Rigidbody2D rb2D = collision.gameObject.GetComponent<Rigidbody2D>();
             rb2D.velocity = new Vector2(rb2D.velocity.x, jumpForce);
-            animator.Play("Scared");
+
+            if (this.gameObject.tag == "Mushroom")
+            { animator.Play("Scared"); }
+
+            
             GetComponentInChildren<PlayAudioClip>().PlayAudio();
         }
     }

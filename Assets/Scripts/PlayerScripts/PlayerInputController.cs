@@ -9,7 +9,7 @@ public class PlayerInputController : MonoBehaviour
 
     [Header("Player")]
     private Rigidbody2D rb2D;
-    private bool facingRight;
+    //private bool facingRight;
 
     public SpriteRenderer sprite;
 
@@ -28,15 +28,19 @@ public class PlayerInputController : MonoBehaviour
 
     public ParticleSystem dust;
 
-    [Header("Audio")]
+    [Header("Audio Clips")]
     public AudioClip[] movementSound;
     public AudioClip honeySound;
     public AudioClip jumpingSound;
+    public AudioClip flowerSound;
+
+    [Header("Audio Settings")]
     public float pitchMin, pitchMax;
     public int movementIndex;
     public bool isMoving;
     bool _jumpSound;
     AudioSource audioScr;
+    public float LevelVolume = 1f;
 
     [Header("GroundChecks")]
     public LayerMask whatIsGround;
@@ -46,11 +50,11 @@ public class PlayerInputController : MonoBehaviour
     public bool isClimbing;
     public float rayDistance;
     public LayerMask whatIsLadder;
-
     public bool onPlatform;
 
-    [Header("HoneyMovement")]
+    [Header("Other Movement")]
     public bool inHoney;
+    public bool onFlower;
 
     [Header("Scripts Connected")]
     private PlayerHealth health;
@@ -72,6 +76,9 @@ public class PlayerInputController : MonoBehaviour
         flute = GetComponent<Player_FluteAura>();
 
         audioScr.clip = movementSound[movementIndex];
+        audioScr.volume = LevelVolume;
+        
+
 
         onPlatform = false;
     }
@@ -104,7 +111,6 @@ public class PlayerInputController : MonoBehaviour
             if (amountOfJump <= 0)
             { amountOfJump += 1; }
 
-            Debug.Log("I'm grounded");
             isGrounded = true;
         }
         else
@@ -205,7 +211,7 @@ public class PlayerInputController : MonoBehaviour
         else if (amountOfJump <= 0)
         {
             rb2D.velocity = new Vector2(rb2D.velocity.x, rb2D.velocity.y);
-            audioScr.volume = 1;
+            //audioScr.volume = 1;
         }
     }
 
@@ -228,8 +234,18 @@ public class PlayerInputController : MonoBehaviour
         
         if (audioScr.isPlaying && moveVector.x == 0 && isGrounded && _jumpSound == false )
         {
-            audioScr.volume = 1;
-            audioScr.Stop();
+            if(movementIndex == 2)
+            {
+                audioScr.volume = LevelVolume;
+                audioScr.Stop();
+            }
+            else if(movementIndex != 2)
+            {
+                audioScr.volume = 1;
+                audioScr.Stop();
+            }
+
+            
         }
         else if(!audioScr.isPlaying && moveVector.x != 0 && isGrounded)
         {
@@ -241,9 +257,22 @@ public class PlayerInputController : MonoBehaviour
             }
             else
             {
-                audioScr.volume = 1;
+                audioScr.volume = LevelVolume;
                 audioScr.clip = movementSound[movementIndex];
             }
+
+            if (onFlower == true)
+            {
+                audioScr.volume = 1;
+                audioScr.clip = flowerSound;
+            }
+            else
+            {
+                audioScr.volume = LevelVolume;
+                audioScr.clip = movementSound[movementIndex];
+            }
+
+
             audioScr.Play();
         }
                
@@ -280,6 +309,11 @@ public class PlayerInputController : MonoBehaviour
             interactCollider = collision.gameObject.GetComponent<Collider2D>();
             onPlatform = true;
         }
+
+        if (collision.gameObject.CompareTag("GrowingPlant"))
+        {
+            onFlower = true;
+        }
     }
 
     private void OnCollisionStay2D(Collision2D collision)
@@ -288,7 +322,10 @@ public class PlayerInputController : MonoBehaviour
         {
             interactCollider = collision.gameObject.GetComponent<Collider2D>();
         }
-        
+        if (collision.gameObject.CompareTag("GrowingPlant"))
+        {
+            onFlower = true; 
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -310,6 +347,7 @@ public class PlayerInputController : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         onPlatform = false;
+        onFlower = false;
     }
 
     #endregion

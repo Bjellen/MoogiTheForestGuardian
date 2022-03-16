@@ -4911,10 +4911,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6d83ae279cbbe234b8619622a191e7cb, type: 3}
   honeySound: {fileID: 8300000, guid: 0489231c26c68bb47a9015ee100ac22f, type: 3}
   jumpingSound: {fileID: 8300000, guid: 5906d7dc941dda847acb4164702b0cba, type: 3}
+  flowerSound: {fileID: 8300000, guid: b58a204d767b6ed4a8439fe1e0bf1232, type: 3}
   pitchMin: 0.8
   pitchMax: 1.2
   movementIndex: 0
   isMoving: 0
+  LevelVolume: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 136
@@ -4926,6 +4928,7 @@ MonoBehaviour:
     m_Bits: 256
   onPlatform: 0
   inHoney: 0
+  onFlower: 0
 --- !u!114 &159860801790206243
 MonoBehaviour:
   m_ObjectHideFlags: 0
