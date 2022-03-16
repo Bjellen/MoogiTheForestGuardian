@@ -2657,7 +2657,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawnpoint 1 Hive
   m_TagString: SpawnPoint
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -11420,7 +11420,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawnpoint 2 Hive
   m_TagString: SpawnPoint
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -14963,7 +14963,7 @@ GameObject:
   m_Layer: 0
   m_Name: 'Spawnpoint 3 Hive '
   m_TagString: SpawnPoint
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -14975,7 +14975,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877588272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.92, y: 1.71, z: 0}
+  m_LocalPosition: {x: 9.14, y: 1.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 387319065}
@@ -23164,7 +23164,7 @@ MonoBehaviour:
   m_BoundingVolume: {fileID: 0}
   m_BoundingShape2D: {fileID: 1526606424}
   m_ConfineScreenEdges: 1
-  m_Damping: 6.4
+  m_Damping: 0
 --- !u!1 &1108255140
 GameObject:
   m_ObjectHideFlags: 0
@@ -46993,8 +46993,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastCheckPointPos:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 223804443}
+  - {fileID: 534978133}
+  - {fileID: 877588272}
   checkPointIndex: 0
 --- !u!4 &1558822517
 Transform:
