@@ -54,7 +54,7 @@ public class Player_FluteAura : MonoBehaviour
         if (plantCollision != null)
         {
             growingFlower.isGrowing = true;
-        }    
+        }
 
     }
 
@@ -72,7 +72,9 @@ public class Player_FluteAura : MonoBehaviour
             growingFlower.isGrowing = false;
             growingFlower = null;
         }
+
         animator.SetBool("IsPlaying", isPlaying);
+
         if (isPlaying && !source.isPlaying)
         {
             source.Play();
