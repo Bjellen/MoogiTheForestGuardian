@@ -153,7 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8f6f4880e9c9c34a9dbf9a25ec3eb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 38
+  timer: 44
+  lastCutsceneName: 
 --- !u!328 &634391586
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -162,7 +163,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634391584}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b84f877463e8907469e8f933c132f220, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 394814118c98ec240a4a52338c366405, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1164366427}
