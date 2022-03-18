@@ -93,8 +93,8 @@ public class PlayerInputController : MonoBehaviour
 
     void OnJump()
     {
-        if (isGrounded)
-        Jump();
+        if (isGrounded && flute.isPlaying == false)
+        { Jump(); }
     }
 
     private void Update()
