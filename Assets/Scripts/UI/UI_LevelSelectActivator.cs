@@ -12,11 +12,9 @@ public class UI_LevelSelectActivator : MonoBehaviour
     {
         saveSystem = GameObject.FindGameObjectWithTag("SaveSystem").GetComponent<SaveSystem>();
         Levels[0].SetActive(false);
-        //Levels[1].SetActive(false);
-        Levels[3].SetActive(false);
+        Levels[1].SetActive(false);
         Levels[2].SetActive(false);
-        Levels[4].SetActive(false);
-        //Levels[5].SetActive(false);
+        Levels[3].SetActive(false);
     }
 
     private void Update()
@@ -30,19 +28,12 @@ public class UI_LevelSelectActivator : MonoBehaviour
         else  { Levels[1].SetActive(false); }
 
         if (saveSystem.data.levels[2])
-        { Levels[3].SetActive(true); }
+        { Levels[2].SetActive(true); }
         else { Levels[2].SetActive(false); }
 
         if (saveSystem.data.levels[3])
-        { Levels[2].SetActive(true); }
+        { Levels[3].SetActive(true); }
         else { Levels[3].SetActive(false); }
 
-        if (saveSystem.data.levels[4])
-        { Levels[4].SetActive(true); }
-        else  {  Levels[4].SetActive(false); }
-
-        //if (saveSystem.data.levels[5])
-        //{ Levels[5].SetActive(true); }
-        //else  { Levels[5].SetActive(false); }
     }
 }
