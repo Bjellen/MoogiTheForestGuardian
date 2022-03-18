@@ -26,7 +26,7 @@ public class CollectableUI : MonoBehaviour
     {
         if (CollectableCount == null)
         {
-            CollectableCount = GameObject.FindGameObjectWithTag("CollectableText").GetComponent<TextMeshProUGUI>();
+            //CollectableCount = GameObject.FindGameObjectWithTag("CollectableText").GetComponent<TextMeshProUGUI>();
         }
         CollectableCount.text = "" + (FindObjectOfType<PlayerInputController>().Collectables);
 

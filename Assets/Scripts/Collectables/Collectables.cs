@@ -15,9 +15,9 @@ public class Collectables : MonoBehaviour
         if (player != null)
         {
             player.Collectables++;
-            
-            audio.PlayAudio();
             Destroy(gameObject);
+            audio.PlayAudio();
+            
         }
     }
 }
