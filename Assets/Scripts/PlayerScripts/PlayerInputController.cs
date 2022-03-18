@@ -53,6 +53,7 @@ public class PlayerInputController : MonoBehaviour
     public LayerMask whatIsLadder;
     public bool onPlatform;
     public bool IsClimbing;
+    
 
     [Header("Other Movement")]
     public bool inHoney;
@@ -140,8 +141,7 @@ public class PlayerInputController : MonoBehaviour
         else if (moveVector.x > 0.5)
         { FlipBack(); }
 
-        if (isClimbing == false)
-        animatior.SetBool("IsJumping", !isGrounded);
+        animatior.SetBool("IsJumping", !isGrounded); 
     }
 
     private void FixedUpdate()
@@ -170,7 +170,7 @@ public class PlayerInputController : MonoBehaviour
 
         RaycastHit2D _hitInfoUp = Physics2D.Raycast(transform.position, Vector2.up, rayDistance, whatIsLadder);
         RaycastHit2D _hitInfoDown = Physics2D.Raycast(transform.position, -Vector2.up, rayDistance, whatIsLadder);
-        
+
         if (_hitInfoUp.collider != null)
         {
             if (moveVector.y > 0)
@@ -181,7 +181,11 @@ public class PlayerInputController : MonoBehaviour
         else
         {
             isClimbing = false;
-            animatior.SetBool("IsClimbing", isClimbing);
+            if (animatior.GetCurrentAnimatorStateInfo(0).IsName("ClimbAnimation"))
+            {
+                animatior.Play("IdleAnimation");
+                animatior.speed = 1;
+            }
         }
 
         if (_hitInfoDown.collider != null)
@@ -194,7 +198,11 @@ public class PlayerInputController : MonoBehaviour
         else
         {
             isClimbing = false;
-            animatior.SetBool ("IsClimbing", isClimbing);
+            if (animatior.GetCurrentAnimatorStateInfo(0).IsName("ClimbAnimation"))
+            {
+                animatior.Play("IdleAnimation");
+                animatior.speed = 1;
+            }
         }
     }
 
@@ -235,7 +243,16 @@ public class PlayerInputController : MonoBehaviour
     void Climb()
     {
         rb2D.velocity = new Vector2(rb2D.velocity.x, moveVector.y * moveSpeed);
-        animatior.SetBool("IsClimbing", isClimbing);
+        animatior.Play("ClimbAnimation");
+        
+        if(moveVector.y != 0)
+        {
+            animatior.speed = 1;
+        }
+        else
+        {
+            animatior.speed = 0;
+        }
 
     }
     #endregion
@@ -308,6 +325,7 @@ public class PlayerInputController : MonoBehaviour
 
         var hit = Physics2D.Raycast(_position, _direction, _distance, whatIsGround);
         Debug.DrawRay(_position, _direction * _distance, Color.green);
+
 
 
         return hit.collider != null;
