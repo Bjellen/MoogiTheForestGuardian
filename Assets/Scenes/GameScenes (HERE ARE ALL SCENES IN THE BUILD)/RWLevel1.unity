@@ -13600,7 +13600,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -25834,7 +25834,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -38218,7 +38218,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650777398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0000009536743, y: 1, z: 0}
+  m_LocalPosition: {x: 0.0000019073486, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 1230773089}
@@ -47114,7 +47114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 789056433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60.62, y: -1.0904846, z: -10}
+  m_LocalPosition: {x: -39.914543, y: -1.0904846, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -66076,6 +66076,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1139746283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7745565686509192474, guid: 217f995ae516d534ebd060adab010585, type: 3}
+  m_PrefabInstance: {fileID: 2083123696}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1141001837
 GameObject:
   m_ObjectHideFlags: 0
@@ -75720,6 +75725,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1279256409 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7745565686509192474, guid: 217f995ae516d534ebd060adab010585, type: 3}
+  m_PrefabInstance: {fileID: 301093210}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1279624696
 GameObject:
   m_ObjectHideFlags: 0
@@ -83423,11 +83433,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.0099983
+      value: 18.945457
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.84
+      value: -0.89048463
       objectReference: {fileID: 0}
     - target: {fileID: 159860802316438561, guid: c5160f81c0fb9f44aba906da38055eb9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -92120,7 +92130,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 50331647
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -97411,7 +97421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1733479846
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -126372,6 +126382,12 @@ PlayableDirector:
     value: {fileID: 629822621}
   - key: {fileID: 4379769461123968575, guid: 8f111337ebb74bb4683a3561c03dcb7a, type: 2}
     value: {fileID: 0}
+  - key: {fileID: 9010382208740717949, guid: 8f111337ebb74bb4683a3561c03dcb7a, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2925612190738873475, guid: 8f111337ebb74bb4683a3561c03dcb7a, type: 2}
+    value: {fileID: 1279256409}
+  - key: {fileID: -7795580677893275768, guid: 8f111337ebb74bb4683a3561c03dcb7a, type: 2}
+    value: {fileID: 1139746283}
   m_ExposedReferences:
     m_References:
     - a3375afb5e8da2745b1bfd9ff4f5230a: {fileID: 1511645928}
@@ -126624,7 +126640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686509192472, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -87.49
+      value: -85.92022
       objectReference: {fileID: 0}
     - target: {fileID: 7745565686509192472, guid: 217f995ae516d534ebd060adab010585, type: 3}
       propertyPath: m_LocalPosition.y
