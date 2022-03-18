@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 36
+  lastCutsceneName: 
 --- !u!328 &574964506
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -245,7 +246,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574964504}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 4e8453ea0d2398442b9abbe32f3eb0a8, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: bfce76fad88445b4981495e4661a029b, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 442847650}
